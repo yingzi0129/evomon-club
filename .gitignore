@@ -13,8 +13,14 @@
 /.next/
 /out/
 
+# wrangler local state
+.wrangler/
+
 # Cloudflare Pages direct upload
 /dist/
+
+# Local image backups (source of truth is R2)
+/public/images/creatures/
 
 # production
 /build

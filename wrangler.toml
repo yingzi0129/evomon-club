@@ -1,3 +1,7 @@
 [build]
 command = "npm run build"
-output_directory = "dist"
+pages_build_output_dir = "dist"
+
+[[r2_buckets]]
+bucket_name = "evomon-club"
+binding = "EVOMON_IMAGES"
