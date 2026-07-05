@@ -1,0 +1,1356 @@
+{
+  "updated_at": "2026-07-05T14:28:30.816380+00:00",
+  "creatures": [
+    {
+      "id": "arcapex",
+      "name": "Arcapex",
+      "slug": "arcapex",
+      "rarity": "Common",
+      "type": "Electric",
+      "base_stats": {
+        "hp": 90,
+        "sp_atk": 91,
+        "sp_def": 69,
+        "speed": 108,
+        "defense": 87,
+        "attack": 115
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-071.png"
+    },
+    {
+      "id": "arcub",
+      "name": "Arcub",
+      "slug": "arcub",
+      "rarity": "Common",
+      "type": "Electric",
+      "base_stats": {
+        "hp": 65,
+        "sp_atk": 64,
+        "sp_def": 50,
+        "speed": 77,
+        "defense": 62,
+        "attack": 82
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-070.png"
+    },
+    {
+      "id": "astraknight",
+      "name": "Astraknight",
+      "slug": "astraknight",
+      "rarity": "Common",
+      "type": "Fighting",
+      "base_stats": {
+        "hp": 88,
+        "sp_atk": 50,
+        "sp_def": 80,
+        "speed": 90,
+        "defense": 94,
+        "attack": 108
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-088.png?v=1782901701760"
+    },
+    {
+      "id": "blazgrowl",
+      "name": "Blazgrowl",
+      "slug": "blazgrowl",
+      "rarity": "Common",
+      "type": "Fire",
+      "base_stats": {
+        "hp": 58,
+        "sp_atk": 56,
+        "sp_def": 55,
+        "speed": 62,
+        "defense": 64,
+        "attack": 74
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/blazgrowl.png?v=1782233143143"
+    },
+    {
+      "id": "blazmane",
+      "name": "Blazmane",
+      "slug": "blazmane",
+      "rarity": "Common",
+      "type": "Fire",
+      "base_stats": {
+        "hp": 78,
+        "sp_atk": 79,
+        "sp_def": 72,
+        "speed": 93,
+        "defense": 93,
+        "attack": 105
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-006.png"
+    },
+    {
+      "id": "blazpup",
+      "name": "Blazpup",
+      "slug": "blazpup",
+      "rarity": "Starter",
+      "type": "Fire",
+      "base_stats": {
+        "hp": 37,
+        "sp_atk": 43,
+        "sp_def": 41,
+        "speed": 44,
+        "defense": 42,
+        "attack": 56
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-003.png?v=1783115326201\\"
+    },
+    {
+      "id": "bluebird",
+      "name": "Bluebird",
+      "slug": "bluebird",
+      "rarity": "Common",
+      "type": "Flying",
+      "base_stats": {
+        "hp": 58,
+        "sp_atk": 66,
+        "sp_def": 50,
+        "speed": 86,
+        "defense": 45,
+        "attack": 62
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-026.png"
+    },
+    {
+      "id": "boltonia",
+      "name": "Boltonia",
+      "slug": "boltonia",
+      "rarity": "Common",
+      "type": "Electric",
+      "base_stats": {},
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-089.jpg?v=1782904506699"
+    },
+    {
+      "id": "bubblade",
+      "name": "Bubblade",
+      "slug": "bubblade",
+      "rarity": "Common",
+      "type": "Water",
+      "base_stats": {
+        "hp": 86,
+        "sp_atk": 100,
+        "sp_def": 85,
+        "speed": 91,
+        "defense": 78,
+        "attack": 81
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-003.png?v=1783115326201"
+    },
+    {
+      "id": "bubble",
+      "name": "Bubble",
+      "slug": "bubble",
+      "rarity": "Starter",
+      "type": "Water",
+      "base_stats": {
+        "hp": 44,
+        "sp_atk": 47,
+        "sp_def": 45,
+        "speed": 40,
+        "defense": 41,
+        "attack": 43
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/bubble.png?v=1782938672797"
+    },
+    {
+      "id": "bubboxer",
+      "name": "Bubboxer",
+      "slug": "bubboxer",
+      "rarity": "Common",
+      "type": "Water",
+      "base_stats": {
+        "hp": 64,
+        "sp_atk": 66,
+        "sp_def": 60,
+        "speed": 59,
+        "defense": 59,
+        "attack": 61
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-071.png\\"
+    },
+    {
+      "id": "budling",
+      "name": "Budling",
+      "slug": "budling",
+      "rarity": "Common",
+      "type": "Dragon",
+      "base_stats": {
+        "hp": 42,
+        "sp_atk": 35,
+        "sp_def": 52,
+        "speed": 45,
+        "defense": 37,
+        "attack": 44
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/budling.png?v=1782938725589"
+    },
+    {
+      "id": "chirphantom",
+      "name": "Chirphantom",
+      "slug": "chirphantom",
+      "rarity": "Common",
+      "type": "Flying",
+      "base_stats": {
+        "hp": 76,
+        "sp_atk": 65,
+        "sp_def": 79,
+        "speed": 103,
+        "defense": 77,
+        "attack": 104
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-012.png"
+    },
+    {
+      "id": "chirplume",
+      "name": "Chirplume",
+      "slug": "chirplume",
+      "rarity": "Common",
+      "type": "Flying",
+      "base_stats": {
+        "hp": 54,
+        "sp_atk": 56,
+        "sp_def": 56,
+        "speed": 73,
+        "defense": 55,
+        "attack": 64
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-011.png"
+    },
+    {
+      "id": "chirppy",
+      "name": "Chirppy",
+      "slug": "chirppy",
+      "rarity": "Common",
+      "type": "Flying",
+      "base_stats": {
+        "hp": 39,
+        "sp_atk": 38,
+        "sp_def": 40,
+        "speed": 52,
+        "defense": 40,
+        "attack": 48
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-010.png"
+    },
+    {
+      "id": "chitaladin",
+      "name": "Chitaladin",
+      "slug": "chitaladin",
+      "rarity": "Common",
+      "type": "Bug",
+      "base_stats": {
+        "hp": 80,
+        "sp_atk": 88,
+        "sp_def": 82,
+        "speed": 92,
+        "defense": 78,
+        "attack": 91
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-051.png"
+    },
+    {
+      "id": "chitgladi",
+      "name": "Chitgladi",
+      "slug": "chitgladi",
+      "rarity": "Common",
+      "type": "Bug",
+      "base_stats": {
+        "hp": 57,
+        "sp_atk": 63,
+        "sp_def": 58,
+        "speed": 66,
+        "defense": 55,
+        "attack": 65
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-050.png"
+    },
+    {
+      "id": "chitmite",
+      "name": "Chitmite",
+      "slug": "chitmite",
+      "rarity": "Common",
+      "type": "Bug",
+      "base_stats": {
+        "hp": 40,
+        "sp_atk": 45,
+        "sp_def": 42,
+        "speed": 47,
+        "defense": 40,
+        "attack": 46
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-049.png"
+    },
+    {
+      "id": "clampip",
+      "name": "Clampip",
+      "slug": "clampip",
+      "rarity": "Common",
+      "type": "Water",
+      "base_stats": {
+        "hp": 43,
+        "sp_atk": 41,
+        "sp_def": 39,
+        "speed": 37,
+        "defense": 51,
+        "attack": 45
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/clampip.png?v=1782938479644"
+    },
+    {
+      "id": "clamspire",
+      "name": "Clamspire",
+      "slug": "clamspire",
+      "rarity": "Common",
+      "type": "Water",
+      "base_stats": {
+        "hp": 85,
+        "sp_atk": 65,
+        "sp_def": 75,
+        "speed": 74,
+        "defense": 100,
+        "attack": 105
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/clamspire.png?v=1782938555441"
+    },
+    {
+      "id": "clamwhirl",
+      "name": "Clamwhirl",
+      "slug": "clamwhirl",
+      "rarity": "Common",
+      "type": "Water",
+      "base_stats": {
+        "hp": 60,
+        "sp_atk": 51,
+        "sp_def": 54,
+        "speed": 52,
+        "defense": 71,
+        "attack": 70
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/clamwhirl.png?v=1782938542360"
+    },
+    {
+      "id": "datubud",
+      "name": "Datubud",
+      "slug": "datubud",
+      "rarity": "Common",
+      "type": "Dragon",
+      "base_stats": {
+        "hp": 58,
+        "sp_atk": 76,
+        "sp_def": 57,
+        "speed": 70,
+        "defense": 56,
+        "attack": 46
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/datubud.jpg?v=1782904645009"
+    },
+    {
+      "id": "datunymph",
+      "name": "Datunymph",
+      "slug": "datunymph",
+      "rarity": "Common",
+      "type": "Dragon",
+      "base_stats": {
+        "hp": 81,
+        "sp_atk": 107,
+        "sp_def": 80,
+        "speed": 97,
+        "defense": 79,
+        "attack": 65
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-081.jpg?v=1782904620403"
+    },
+    {
+      "id": "emfox",
+      "name": "Emfox",
+      "slug": "emfox",
+      "rarity": "Common",
+      "type": "Fire",
+      "base_stats": {
+        "hp": 56,
+        "sp_atk": 70,
+        "sp_def": 48,
+        "speed": 78,
+        "defense": 48,
+        "attack": 60
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/emfox.png?v=1782939992922"
+    },
+    {
+      "id": "empixy",
+      "name": "Empixy",
+      "slug": "empixy",
+      "rarity": "Common",
+      "type": "Fire",
+      "base_stats": {
+        "hp": 78,
+        "sp_atk": 100,
+        "sp_def": 68,
+        "speed": 109,
+        "defense": 68,
+        "attack": 81
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/empixy.png?v=1782938415730"
+    },
+    {
+      "id": "florawn",
+      "name": "Florawn",
+      "slug": "florawn",
+      "rarity": "Common",
+      "type": "Dragon",
+      "base_stats": {
+        "hp": 60,
+        "sp_atk": 50,
+        "sp_def": 73,
+        "speed": 64,
+        "defense": 53,
+        "attack": 62
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-035.png"
+    },
+    {
+      "id": "fluffastar",
+      "name": "Fluffastar",
+      "slug": "fluffastar",
+      "rarity": "Common",
+      "type": "Rock",
+      "base_stats": {
+        "hp": 78,
+        "sp_atk": 102,
+        "sp_def": 75,
+        "speed": 94,
+        "defense": 98,
+        "attack": 73
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-045.png"
+    },
+    {
+      "id": "fluffet",
+      "name": "Fluffet",
+      "slug": "fluffet",
+      "rarity": "Common",
+      "type": "Rock",
+      "base_stats": {
+        "hp": 56,
+        "sp_atk": 63,
+        "sp_def": 53,
+        "speed": 67,
+        "defense": 70,
+        "attack": 55
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-044.png"
+    },
+    {
+      "id": "flutterby",
+      "name": "Flutterby",
+      "slug": "flutterby",
+      "rarity": "Common",
+      "type": "Bug",
+      "base_stats": {
+        "hp": 58,
+        "sp_atk": 49,
+        "sp_def": 52,
+        "speed": 74,
+        "defense": 66,
+        "attack": 67
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-014.png"
+    },
+    {
+      "id": "frostelle",
+      "name": "Frostelle",
+      "slug": "frostelle",
+      "rarity": "Common",
+      "type": "Dragon",
+      "base_stats": {
+        "hp": 81,
+        "sp_atk": 92,
+        "sp_def": 81,
+        "speed": 113,
+        "defense": 71,
+        "attack": 80
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-055.png"
+    },
+    {
+      "id": "frostlet",
+      "name": "Frostlet",
+      "slug": "frostlet",
+      "rarity": "Starter",
+      "type": "Ice",
+      "base_stats": {
+        "hp": 60,
+        "sp_atk": 66,
+        "sp_def": 62,
+        "speed": 70,
+        "defense": 53,
+        "attack": 57
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-060.png"
+    },
+    {
+      "id": "frostseer",
+      "name": "Frostseer",
+      "slug": "frostseer",
+      "rarity": "Common",
+      "type": "Ice",
+      "base_stats": {
+        "hp": 83,
+        "sp_atk": 102,
+        "sp_def": 87,
+        "speed": 98,
+        "defense": 75,
+        "attack": 83
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-061.png"
+    },
+    {
+      "id": "gempillar",
+      "name": "Gempillar",
+      "slug": "gempillar",
+      "rarity": "Common",
+      "type": "Bug",
+      "base_stats": {
+        "hp": 52,
+        "sp_atk": 74,
+        "sp_def": 48,
+        "speed": 70,
+        "defense": 48,
+        "attack": 70
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-064.png"
+    },
+    {
+      "id": "gempress",
+      "name": "Gempress",
+      "slug": "gempress",
+      "rarity": "Common",
+      "type": "Bug",
+      "base_stats": {
+        "hp": 73,
+        "sp_atk": 104,
+        "sp_def": 68,
+        "speed": 97,
+        "defense": 68,
+        "attack": 98
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-065.png"
+    },
+    {
+      "id": "glacitadel",
+      "name": "Glacitadel",
+      "slug": "glacitadel",
+      "rarity": "Common",
+      "type": "Ice",
+      "base_stats": {
+        "hp": 75,
+        "sp_atk": 102,
+        "sp_def": 67,
+        "speed": 93,
+        "defense": 67,
+        "attack": 108
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-048.png"
+    },
+    {
+      "id": "glaclide",
+      "name": "Glaclide",
+      "slug": "glaclide",
+      "rarity": "Common",
+      "type": "Ice",
+      "base_stats": {
+        "hp": 38,
+        "sp_atk": 53,
+        "sp_def": 35,
+        "speed": 45,
+        "defense": 35,
+        "attack": 56
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-046.png"
+    },
+    {
+      "id": "glacone",
+      "name": "Glacone",
+      "slug": "glacone",
+      "rarity": "Common",
+      "type": "Ice",
+      "base_stats": {
+        "hp": 53,
+        "sp_atk": 73,
+        "sp_def": 49,
+        "speed": 63,
+        "defense": 48,
+        "attack": 74
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-047.png"
+    },
+    {
+      "id": "graycrene",
+      "name": "Graycrene",
+      "slug": "graycrene",
+      "rarity": "Common",
+      "type": "Flying",
+      "base_stats": {
+        "hp": 60,
+        "sp_atk": 70,
+        "sp_def": 65,
+        "speed": 73,
+        "defense": 54,
+        "attack": 78
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-056.png"
+    },
+    {
+      "id": "gulpfish",
+      "name": "Gulpfish",
+      "slug": "gulpfish",
+      "rarity": "Common",
+      "type": "Water",
+      "base_stats": {
+        "hp": 82,
+        "sp_atk": 69,
+        "sp_def": 55,
+        "speed": 35,
+        "defense": 55,
+        "attack": 60
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-024.png"
+    },
+    {
+      "id": "humding",
+      "name": "Humding",
+      "slug": "humding",
+      "rarity": "Common",
+      "type": "Bug",
+      "base_stats": {
+        "hp": 42,
+        "sp_atk": 38,
+        "sp_def": 37,
+        "speed": 51,
+        "defense": 50,
+        "attack": 47
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-013.png"
+    },
+    {
+      "id": "lavarock",
+      "name": "Lavarock",
+      "slug": "lavarock",
+      "rarity": "Common",
+      "type": "Fire",
+      "base_stats": {
+        "hp": 82,
+        "sp_atk": 77,
+        "sp_def": 72,
+        "speed": 62,
+        "defense": 105,
+        "attack": 104
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/lavarock.png?v=1782938912584"
+    },
+    {
+      "id": "lavite",
+      "name": "Lavite",
+      "slug": "lavite",
+      "rarity": "Common",
+      "type": "Fire",
+      "base_stats": {
+        "hp": 62,
+        "sp_atk": 51,
+        "sp_def": 61,
+        "speed": 44,
+        "defense": 75,
+        "attack": 72
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/lavite.png?v=1782938901054"
+    },
+    {
+      "id": "leafblade",
+      "name": "Leafblade",
+      "slug": "leafblade",
+      "rarity": "Common",
+      "type": "Dragon",
+      "base_stats": {
+        "hp": 77,
+        "sp_atk": 100,
+        "sp_def": 76,
+        "speed": 95,
+        "defense": 77,
+        "attack": 100
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-009.png"
+    },
+    {
+      "id": "leafbun",
+      "name": "Leafbun",
+      "slug": "leafbun",
+      "rarity": "Common",
+      "type": "Dragon",
+      "base_stats": {
+        "hp": 39,
+        "sp_atk": 50,
+        "sp_def": 37,
+        "speed": 49,
+        "defense": 37,
+        "attack": 50
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/leafbun.png?v=1782938784460"
+    },
+    {
+      "id": "leafroge",
+      "name": "Leafroge",
+      "slug": "leafroge",
+      "rarity": "Common",
+      "type": "Dragon",
+      "base_stats": {
+        "hp": 54,
+        "sp_atk": 70,
+        "sp_def": 54,
+        "speed": 67,
+        "defense": 55,
+        "attack": 70
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-008.png"
+    },
+    {
+      "id": "mirefish",
+      "name": "Mirefish",
+      "slug": "mirefish",
+      "rarity": "Common",
+      "type": "Water",
+      "base_stats": {
+        "hp": 115,
+        "sp_atk": 101,
+        "sp_def": 78,
+        "speed": 50,
+        "defense": 78,
+        "attack": 80
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-025.png"
+    },
+    {
+      "id": "mopebun",
+      "name": "Mopebun",
+      "slug": "mopebun",
+      "rarity": "Common",
+      "type": "Normal",
+      "base_stats": {
+        "hp": 60,
+        "sp_atk": 64,
+        "sp_def": 58,
+        "speed": 63,
+        "defense": 58,
+        "attack": 58
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/mopebun.png?v=1782503540836"
+    },
+    {
+      "id": "mopillow",
+      "name": "Mopillow",
+      "slug": "mopillow",
+      "rarity": "Common",
+      "type": "Normal",
+      "base_stats": {
+        "hp": 85,
+        "sp_atk": 90,
+        "sp_def": 79,
+        "speed": 82,
+        "defense": 79,
+        "attack": 85
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-017.png"
+    },
+    {
+      "id": "mudbud",
+      "name": "Mudbud",
+      "slug": "mudbud",
+      "rarity": "Common",
+      "type": "Ground",
+      "base_stats": {
+        "hp": 43,
+        "sp_atk": 43,
+        "sp_def": 43,
+        "speed": 41,
+        "defense": 44,
+        "attack": 46
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/mudbud.jpg?v=1782904547707"
+    },
+    {
+      "id": "mudthorn",
+      "name": "Mudthorn",
+      "slug": "mudthorn",
+      "rarity": "Common",
+      "type": "Ground",
+      "base_stats": {
+        "hp": 60,
+        "sp_atk": 61,
+        "sp_def": 61,
+        "speed": 57,
+        "defense": 62,
+        "attack": 64
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-086.jpg?v=1782904528697"
+    },
+    {
+      "id": "pebble",
+      "name": "Pebble",
+      "slug": "pebble",
+      "rarity": "Common",
+      "type": "Rock",
+      "base_stats": {
+        "hp": 37,
+        "sp_atk": 33,
+        "sp_def": 57,
+        "speed": 27,
+        "defense": 58,
+        "attack": 40
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/pebble.png?v=1782938985494"
+    },
+    {
+      "id": "pebgolem",
+      "name": "Pebgolem",
+      "slug": "pebgolem",
+      "rarity": "Common",
+      "type": "Rock",
+      "base_stats": {
+        "hp": 74,
+        "sp_atk": 71,
+        "sp_def": 112,
+        "speed": 55,
+        "defense": 115,
+        "attack": 80
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/pebgolem.png?v=1782503690034"
+    },
+    {
+      "id": "pebroll",
+      "name": "Pebroll",
+      "slug": "pebroll",
+      "rarity": "Common",
+      "type": "Rock",
+      "base_stats": {
+        "hp": 51,
+        "sp_atk": 52,
+        "sp_def": 79,
+        "speed": 39,
+        "defense": 84,
+        "attack": 55
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/pebroll.png?v=1782503661067"
+    },
+    {
+      "id": "pummash",
+      "name": "Pummash",
+      "slug": "pummash",
+      "rarity": "Common",
+      "type": "Fighting",
+      "base_stats": {
+        "hp": 82,
+        "sp_atk": 68,
+        "sp_def": 69,
+        "speed": 88,
+        "defense": 90,
+        "attack": 117
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-079.jpg?v=1782904634303"
+    },
+    {
+      "id": "pummpaw",
+      "name": "Pummpaw",
+      "slug": "pummpaw",
+      "rarity": "Common",
+      "type": "Fighting",
+      "base_stats": {
+        "hp": 58,
+        "sp_atk": 49,
+        "sp_def": 50,
+        "speed": 63,
+        "defense": 64,
+        "attack": 83
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-078.jpg?v=1782904657104"
+    },
+    {
+      "id": "rank",
+      "name": "Rank",
+      "slug": "rank",
+      "rarity": "Unknown",
+      "type": "Normal",
+      "base_stats": {},
+      "locations": [],
+      "description": "",
+      "image": "/images/creatures/rank.png"
+    },
+    {
+      "id": "silvanarch",
+      "name": "Silvanarch",
+      "slug": "silvanarch",
+      "rarity": "Common",
+      "type": "Dragon",
+      "base_stats": {
+        "hp": 83,
+        "sp_atk": 72,
+        "sp_def": 102,
+        "speed": 90,
+        "defense": 75,
+        "attack": 88
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/silvanarch.png?v=1782655883359"
+    },
+    {
+      "id": "sparkit",
+      "name": "Sparkit",
+      "slug": "sparkit",
+      "rarity": "Common",
+      "type": "Fire",
+      "base_stats": {
+        "hp": 40,
+        "sp_atk": 50,
+        "sp_def": 34,
+        "speed": 55,
+        "defense": 34,
+        "attack": 44
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/sparkit.png?v=1782939980401"
+    },
+    {
+      "id": "spikub",
+      "name": "Spikub",
+      "slug": "spikub",
+      "rarity": "Common",
+      "type": "Ground",
+      "base_stats": {
+        "hp": 58,
+        "sp_atk": 65,
+        "sp_def": 75,
+        "speed": 70,
+        "defense": 52,
+        "attack": 55
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-058.png"
+    },
+    {
+      "id": "spikumane",
+      "name": "Spikumane",
+      "slug": "spikumane",
+      "rarity": "Common",
+      "type": "Ground",
+      "base_stats": {},
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-059.png"
+    },
+    {
+      "id": "stardrift",
+      "name": "Stardrift",
+      "slug": "stardrift",
+      "rarity": "Common",
+      "type": "Dragon",
+      "base_stats": {
+        "hp": 57,
+        "sp_atk": 68,
+        "sp_def": 58,
+        "speed": 81,
+        "defense": 51,
+        "attack": 65
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-054.png"
+    },
+    {
+      "id": "starloop",
+      "name": "Starloop",
+      "slug": "starloop",
+      "rarity": "Common",
+      "type": "Psychic",
+      "base_stats": {
+        "hp": 58,
+        "sp_atk": 72,
+        "sp_def": 53,
+        "speed": 53,
+        "defense": 67,
+        "attack": 60
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-072.png"
+    },
+    {
+      "id": "starmuse",
+      "name": "Starmuse",
+      "slug": "starmuse",
+      "rarity": "Common",
+      "type": "Psychic",
+      "base_stats": {
+        "hp": 81,
+        "sp_atk": 115,
+        "sp_def": 75,
+        "speed": 75,
+        "defense": 94,
+        "attack": 79
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-073.png"
+    },
+    {
+      "id": "sundercrene",
+      "name": "Sundercrene",
+      "slug": "sundercrene",
+      "rarity": "Common",
+      "type": "Flying",
+      "base_stats": {
+        "hp": 87,
+        "sp_atk": 87,
+        "sp_def": 92,
+        "speed": 107,
+        "defense": 73,
+        "attack": 114
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-057.png"
+    },
+    {
+      "id": "tarragon",
+      "name": "Tarragon",
+      "slug": "tarragon",
+      "rarity": "Common",
+      "type": "Dragon",
+      "base_stats": {
+        "hp": 87,
+        "sp_atk": 88,
+        "sp_def": 75,
+        "speed": 100,
+        "defense": 75,
+        "attack": 90
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-067.png"
+    },
+    {
+      "id": "tarro",
+      "name": "Tarro",
+      "slug": "tarro",
+      "rarity": "Common",
+      "type": "Dragon",
+      "base_stats": {
+        "hp": 62,
+        "sp_atk": 52,
+        "sp_def": 53,
+        "speed": 71,
+        "defense": 53,
+        "attack": 64
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-066.png"
+    },
+    {
+      "id": "thordlord",
+      "name": "Thordlord",
+      "slug": "thordlord",
+      "rarity": "Common",
+      "type": "Ground",
+      "base_stats": {
+        "hp": 84,
+        "sp_atk": 86,
+        "sp_def": 86,
+        "speed": 81,
+        "defense": 87,
+        "attack": 90
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-087.jpg?v=1782904474782"
+    },
+    {
+      "id": "tinkog",
+      "name": "Tinkog",
+      "slug": "tinkog",
+      "rarity": "Common",
+      "type": "Steel",
+      "base_stats": {
+        "hp": 57,
+        "sp_atk": 57,
+        "sp_def": 75,
+        "speed": 46,
+        "defense": 77,
+        "attack": 50
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-074.png"
+    },
+    {
+      "id": "tinkore",
+      "name": "Tinkore",
+      "slug": "tinkore",
+      "rarity": "Common",
+      "type": "Steel",
+      "base_stats": {},
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-075.jpg?v=1782904772991"
+    },
+    {
+      "id": "twirlby",
+      "name": "Twirlby",
+      "slug": "twirlby",
+      "rarity": "Common",
+      "type": "Bug",
+      "base_stats": {},
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-015.png"
+    },
+    {
+      "id": "viparch",
+      "name": "Viparch",
+      "slug": "viparch",
+      "rarity": "Legendary",
+      "type": "Dark",
+      "base_stats": {
+        "hp": 75,
+        "sp_atk": 77,
+        "sp_def": 65,
+        "speed": 106,
+        "defense": 65,
+        "attack": 114
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-039.png"
+    },
+    {
+      "id": "vipip",
+      "name": "Vipip",
+      "slug": "vipip",
+      "rarity": "Common",
+      "type": "Dark",
+      "base_stats": {
+        "hp": 39,
+        "sp_atk": 40,
+        "sp_def": 33,
+        "speed": 54,
+        "defense": 33,
+        "attack": 59
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-037.png"
+    },
+    {
+      "id": "vipour",
+      "name": "Vipour",
+      "slug": "vipour",
+      "rarity": "Common",
+      "type": "Dark",
+      "base_stats": {
+        "hp": 54,
+        "sp_atk": 55,
+        "sp_def": 46,
+        "speed": 76,
+        "defense": 46,
+        "attack": 82
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-038.png"
+    },
+    {
+      "id": "volcrest",
+      "name": "Volcrest",
+      "slug": "volcrest",
+      "rarity": "Common",
+      "type": "Flying",
+      "base_stats": {
+        "hp": 74,
+        "sp_atk": 95,
+        "sp_def": 70,
+        "speed": 120,
+        "defense": 66,
+        "attack": 90
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-027.png"
+    },
+    {
+      "id": "wisphex",
+      "name": "Wisphex",
+      "slug": "wisphex",
+      "rarity": "Common",
+      "type": "Dark",
+      "base_stats": {
+        "hp": 74,
+        "sp_atk": 95,
+        "sp_def": 68,
+        "speed": 109,
+        "defense": 78,
+        "attack": 86
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-084.jpg?v=1782904570583"
+    },
+    {
+      "id": "wispshade",
+      "name": "Wispshade",
+      "slug": "wispshade",
+      "rarity": "Common",
+      "type": "Dark",
+      "base_stats": {
+        "hp": 52,
+        "sp_atk": 67,
+        "sp_def": 48,
+        "speed": 78,
+        "defense": 56,
+        "attack": 62
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-083.jpg?v=1782904597154"
+    },
+    {
+      "id": "wispuff",
+      "name": "Wispuff",
+      "slug": "wispuff",
+      "rarity": "Common",
+      "type": "Dark",
+      "base_stats": {
+        "hp": 37,
+        "sp_atk": 48,
+        "sp_def": 34,
+        "speed": 56,
+        "defense": 40,
+        "attack": 44
+      },
+      "locations": [],
+      "description": "",
+      "image": "https://noccvatccxpakfedhysz.supabase.co/storage/v1/object/public/pet-images/catalog/evomon-082.jpg?v=1782904585627"
+    }
+  ]
+}

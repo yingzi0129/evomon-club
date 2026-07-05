@@ -1,0 +1,80 @@
+{
+  "updated_at": "2026-07-05T14:28:45.008685+00:00",
+  "meta_version": "v1.0",
+  "methodology": "Based on PvE viability, base stats, rarity, and community feedback. Aggregated from community tier lists including evomon.wiki and Pocket Tactics.",
+  "sources": [
+    "pockettactics.com",
+    "evomon.wiki"
+  ],
+  "tiers": [
+    {
+      "tier": "S",
+      "label": "Top Picks",
+      "creatures": [
+        "arcub",
+        "astraknight",
+        "bluebird",
+        "boltonia",
+        "tarro"
+      ]
+    },
+    {
+      "tier": "A",
+      "label": "Strong Choices",
+      "creatures": [
+        "chitmite",
+        "datubud",
+        "fluffastar",
+        "frostlet",
+        "lavite",
+        "pebble",
+        "sparkit",
+        "vipip",
+        "wispuff"
+      ]
+    },
+    {
+      "tier": "B",
+      "label": "Solid Situationally",
+      "creatures": [
+        "blazpup",
+        "gempillar",
+        "mudbud",
+        "starloop"
+      ]
+    },
+    {
+      "tier": "C",
+      "label": "Niche Use",
+      "creatures": [
+        "budling",
+        "glaclide",
+        "humding",
+        "mopebun",
+        "stardrift",
+        "arcapex",
+        "blazgrowl",
+        "blazmane",
+        "bubblade",
+        "bubboxer",
+        "chirphantom",
+        "chirplume",
+        "chitaladin",
+        "chitgladi",
+        "clamspire"
+      ]
+    },
+    {
+      "tier": "D",
+      "label": "Avoid for Now",
+      "creatures": [
+        "bubble",
+        "chirppy",
+        "clampip",
+        "gulpfish",
+        "leafbun",
+        "tinkog"
+      ]
+    }
+  ]
+}
