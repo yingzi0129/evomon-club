@@ -91,7 +91,7 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-gradient-to-tr from-indigo-100 to-blue-50 rounded-[3rem] transform rotate-3 scale-95 -z-10 opacity-70"></div>
             <div className="relative w-full max-w-lg mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-white/80 ring-1 ring-slate-100">
               <img
-                src="https://pub-d7b9905bb9f34ffe805ce332be3058d9.r2.dev/assets/hero-cover.webp"
+                src="https://cdn.evomon.club/assets/hero-cover.webp"
                 alt="Evomon Roblox game cover"
                 className="w-full h-auto object-cover"
                 width={768}
