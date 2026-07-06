@@ -5,7 +5,7 @@ import { CodesPageClient } from "@/components/codes-page-client";
 export const metadata: Metadata = {
   title: "Evomon Codes (Active Today) - Evomon.club",
   description:
-    "See all active Evomon codes for free gems, rewards, and boosts. Updated daily with last verified time. Redeem through official Roblox channels.",
+    "See all active Evomon codes for free gems, rewards, and boosts. Updated regularly with last verified time. Redeem through official Roblox channels.",
   alternates: {
     canonical: "https://evomon.club/codes",
   },

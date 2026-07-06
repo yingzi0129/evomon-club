@@ -41,7 +41,7 @@ export default function AboutPage() {
           What we cover
         </h2>
         <ul className="list-disc list-inside text-slate-600 space-y-2">
-          <li>Active Evomon codes, updated daily</li>
+          <li>Active Evomon codes, updated regularly</li>
           <li>Creature stats, types, rarity, and locations</li>
           <li>Community tier list based on PvE viability</li>
         </ul>

@@ -6,8 +6,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
   const staticPages = [
-    { url: base, changeFrequency: "daily" as const, priority: 1.0 },
-    { url: `${base}/codes`, changeFrequency: "daily" as const, priority: 0.9 },
+    { url: base, changeFrequency: "weekly" as const, priority: 1.0 },
+    { url: `${base}/codes`, changeFrequency: "weekly" as const, priority: 0.9 },
     { url: `${base}/tier-list`, changeFrequency: "weekly" as const, priority: 0.8 },
     { url: `${base}/creatures`, changeFrequency: "weekly" as const, priority: 0.8 },
   ];

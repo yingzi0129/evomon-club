@@ -89,7 +89,7 @@ export function CodesPageClient({ activeCodes }: { activeCodes: typeof codesData
                   How often are codes updated?
                 </h3>
                 <p className="text-slate-600">
-                  We check official channels and trusted sources daily. Each code shows a last verified time, but codes can expire at any time.
+                  We check official channels and trusted sources regularly. Each code shows a last verified time, but codes can expire at any time.
                 </p>
               </div>
             </div>
@@ -125,7 +125,7 @@ export function CodesPageClient({ activeCodes }: { activeCodes: typeof codesData
             <div className="flex items-start space-x-3">
               <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <p className="text-sm text-amber-900 leading-relaxed">
-                Codes are collected from official Evomon social media, Discord, and in-game announcements. We update this list daily, but codes may expire before the next refresh. Always redeem through official Roblox / Evomon channels.
+                Codes are collected from official Evomon social media, Discord, and in-game announcements. We update this list regularly, but codes may expire before the next refresh. Always redeem through official Roblox / Evomon channels.
               </p>
             </div>
           </div>

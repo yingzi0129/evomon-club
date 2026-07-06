@@ -10,7 +10,7 @@ export function Footer() {
               Never miss a new code
             </h3>
             <p className="text-slate-600 max-w-md">
-              Check back daily or bookmark this page for the latest active codes and tier updates.
+              Check back regularly or bookmark this page for the latest active codes and tier updates.
             </p>
           </div>
           <Link

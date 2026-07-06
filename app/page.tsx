@@ -53,7 +53,7 @@ export default function HomePage() {
               Your Fastest <span className="text-gradient-indigo">Evomon</span> Guide Hub
             </h1>
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-lg">
-              Active codes, tier list, and creature stats — updated daily and built for mobile players first.
+              Active codes, tier list, and creature stats — updated regularly and built for mobile players first.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -74,7 +74,7 @@ export default function HomePage() {
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2 text-sm text-slate-500 font-medium">
               <div className="flex items-center gap-1.5">
                 <CheckCircle className="w-4 h-4 text-accent-nature" />
-                Daily updates
+                Regular updates
               </div>
               <div className="flex items-center gap-1.5">
                 <CheckCircle className="w-4 h-4 text-accent-nature" />
@@ -87,79 +87,22 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="relative w-full aspect-square md:aspect-auto md:h-[500px] lg:h-[600px] flex items-center justify-center">
+          <div className="relative w-full flex items-center justify-center">
             <div className="absolute inset-0 bg-gradient-to-tr from-indigo-100 to-blue-50 rounded-[3rem] transform rotate-3 scale-95 -z-10 opacity-70"></div>
-            <div className="relative w-full max-w-md mx-auto grid grid-cols-1 gap-4">
-              {/* Code Card Mockup */}
-              <div className="glass rounded-2xl p-5 shadow-xl transform -rotate-2 hover:rotate-0 transition-transform duration-300 ml-4 border border-white/60">
-                <div className="flex justify-between items-start mb-3">
-                  <div className="bg-indigo-100 text-indigo-700 text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">
-                    New Code
-                  </div>
-                  <span className="text-xs text-slate-400 font-medium">Verified 2h ago</span>
-                </div>
-                <div className="bg-slate-100 rounded-lg p-3 text-center border border-slate-200 border-dashed mb-3">
-                  <span className="font-mono text-xl font-bold tracking-widest text-slate-800">
-                    {activeCodes[0]?.code || "EVO120HYPE"}
-                  </span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm font-medium text-slate-600 flex items-center gap-1">
-                    <Gift className="w-4 h-4 text-cta" />
-                    {activeCodes[0]?.reward || "In-game reward"}
-                  </span>
-                  <span className="text-xs font-bold text-indigo-600 bg-indigo-50 px-3 py-1.5 rounded-md">
-                    Copy
-                  </span>
-                </div>
-              </div>
-
-              {/* Tier List Mockup */}
-              <div className="glass rounded-2xl p-4 shadow-xl transform translate-x-8 translate-y-2 hover:translate-x-6 transition-transform duration-300 border border-white/60 flex items-center gap-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-red-400 to-red-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-inner border border-red-300/50">
-                  S+
-                </div>
-                <div className="flex-grow">
-                  <h4 className="font-bold text-slate-800">Arcub</h4>
-                  <div className="flex gap-1 mt-1">
-                    <span className="bg-slate-100 text-slate-500 text-[10px] px-1.5 py-0.5 rounded font-bold uppercase">
-                      Electric
-                    </span>
-                    <span className="bg-slate-100 text-slate-500 text-[10px] px-1.5 py-0.5 rounded font-bold uppercase">
-                      DPS
-                    </span>
-                  </div>
-                </div>
-                <div className="w-10 h-10 rounded-full bg-slate-100 border-2 border-white shadow-sm object-cover flex items-center justify-center text-lg">
-                  ⚡
-                </div>
-              </div>
-
-              {/* Creature Mini Card Mockup */}
-              <div className="glass rounded-2xl p-4 shadow-xl transform rotate-1 -translate-x-4 translate-y-4 hover:rotate-0 transition-transform duration-300 border border-white/60">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-lg">💧</div>
-                  <div>
-                    <h4 className="font-bold text-slate-800 text-sm">Bubble</h4>
-                    <span className="text-xs text-accent-water font-medium flex items-center">
-                      Water Type
-                    </span>
-                  </div>
-                </div>
-                <div className="grid grid-cols-3 gap-2 mt-3">
-                  <div className="bg-slate-50 rounded p-1.5 text-center">
-                    <div className="text-[9px] text-slate-400 font-bold uppercase">ATK</div>
-                    <div className="text-xs font-bold text-slate-700">43</div>
-                  </div>
-                  <div className="bg-slate-50 rounded p-1.5 text-center">
-                    <div className="text-[9px] text-slate-400 font-bold uppercase">DEF</div>
-                    <div className="text-xs font-bold text-slate-700">41</div>
-                  </div>
-                  <div className="bg-slate-50 rounded p-1.5 text-center">
-                    <div className="text-[9px] text-slate-400 font-bold uppercase">SPD</div>
-                    <div className="text-xs font-bold text-slate-700">40</div>
-                  </div>
-                </div>
+            <div className="relative w-full max-w-lg mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-white/80 ring-1 ring-slate-100">
+              <img
+                src="https://pub-d7b9905bb9f34ffe805ce332be3058d9.r2.dev/assets/hero-cover.webp"
+                alt="Evomon Roblox game cover"
+                className="w-full h-auto object-cover"
+                width={768}
+                height={432}
+                loading="eager"
+                decoding="async"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-5">
+                <p className="text-white text-sm font-semibold drop-shadow">
+                  Catch, battle, and explore with Evomon on Roblox.
+                </p>
               </div>
             </div>
           </div>
@@ -185,7 +128,7 @@ export default function HomePage() {
             One clean hub for codes, tiers, and creatures
           </h2>
           <p className="text-lg text-slate-600">
-            We monitor official channels and trusted sources daily, then turn the latest info into a fast, structured guide you can actually use on mobile.
+            We monitor official channels and trusted sources, then turn the latest info into a fast, structured guide you can actually use on mobile.
           </p>
         </div>
 
@@ -202,7 +145,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-3 font-headline">Active Codes Today</h3>
               <p className="text-slate-600 leading-relaxed mb-6">
-                Daily checks on official Discord, Twitter/X, and Pro Game Guides. Each code shows reward, status, and last verified time.
+                Regular checks on official Discord, Twitter/X, and Pro Game Guides. Each code shows reward, status, and last verified time.
               </p>
             </div>
             <div className="bg-slate-50 rounded-xl p-4 border border-slate-100 relative z-10">
@@ -273,7 +216,7 @@ export default function HomePage() {
           Never miss a new code
         </h2>
         <p className="text-lg text-slate-600 mb-8">
-          Check back daily or bookmark this page for the latest active codes and tier updates.
+          Check back regularly or bookmark this page for the latest active codes and tier updates.
         </p>
         <Link
           href="/codes"
