@@ -1,9 +1,12 @@
 import Link from "next/link";
+import { CookieBanner } from "./cookie-banner";
 
 export function Footer() {
   return (
-    <footer className="bg-white border-t border-slate-100">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
+    <>
+      <CookieBanner />
+      <footer className="bg-white border-t border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8">
           <div>
             <h3 className="font-headline font-bold text-xl text-slate-900 mb-2">
@@ -42,5 +45,6 @@ export function Footer() {
         </div>
       </div>
     </footer>
+  </>
   );
 }

@@ -3,7 +3,6 @@ import { Sora, Manrope } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { CookieBanner } from "@/components/cookie-banner";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -55,7 +54,6 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-grow pt-20 md:pt-24">{children}</main>
         <Footer />
-        <CookieBanner />
       </body>
     </html>
   );
