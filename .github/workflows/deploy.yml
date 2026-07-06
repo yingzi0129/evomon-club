@@ -25,6 +25,9 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+        env:
+          YARN_REGISTRY: https://registry.npmjs.org
+          NODE_OPTIONS: --no-warnings
 
       - name: Build
         run: yarn build
