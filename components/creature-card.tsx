@@ -63,9 +63,9 @@ export function CreatureCard({ creature }: CreatureCardProps) {
   const rarityColor = rarityColors[creature.rarity] || rarityColors.Unknown;
 
   const stats = creature.base_stats;
-  const atk = stats.attack || 0;
-  const def = stats.defense || 0;
-  const spd = stats.speed || 0;
+  const atk = stats.attack ?? null;
+  const def = stats.defense ?? null;
+  const spd = stats.speed ?? null;
 
   const imageUrl =
     creature.image && !creature.image.startsWith("/images/")
@@ -105,19 +105,19 @@ export function CreatureCard({ creature }: CreatureCardProps) {
           <span className="text-[10px] text-slate-400 uppercase tracking-wider">
             Atk
           </span>
-          <span className="font-semibold text-slate-700 text-sm">{atk}</span>
+          <span className="font-semibold text-slate-700 text-sm">{atk ?? "?"}</span>
         </div>
         <div className="flex flex-col">
           <span className="text-[10px] text-slate-400 uppercase tracking-wider">
             Def
           </span>
-          <span className="font-semibold text-slate-700 text-sm">{def}</span>
+          <span className="font-semibold text-slate-700 text-sm">{def ?? "?"}</span>
         </div>
         <div className="flex flex-col">
           <span className="text-[10px] text-slate-400 uppercase tracking-wider">
             Spd
           </span>
-          <span className="font-semibold text-slate-700 text-sm">{spd}</span>
+          <span className="font-semibold text-slate-700 text-sm">{spd ?? "?"}</span>
         </div>
       </div>
     </Link>

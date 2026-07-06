@@ -119,21 +119,111 @@ export default function CreatureDetailPage({ params }: PageProps) {
                 About {creature.name}
               </h2>
               <p className="text-slate-600 leading-relaxed text-lg">
-                {creature.description}
+                {creature.description || `No detailed description available for ${creature.name} yet. Check back soon for updates.`}
               </p>
             </div>
+
+            {(creature.locations && creature.locations.length > 0) ? (
+              <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
+                <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-indigo-500" />
+                  Locations
+                </h2>
+                <ul className="list-disc list-inside text-slate-600 space-y-1">
+                  {creature.locations.map((loc) => (
+                    <li key={loc}>{loc}</li>
+                  ))}
+                </ul>
+              </div>
+            ) : (
+              <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
+                <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-indigo-500" />
+                  Locations
+                </h2>
+                <p className="text-slate-500">Location data coming soon. We&apos;re mapping where {creature.name} appears in Evomon.</p>
+              </div>
+            )}
+
+            {(creature.how_to_get && creature.how_to_get.length > 0) ? (
+              <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
+                <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4">
+                  How to Get {creature.name}
+                </h2>
+                <ul className="list-disc list-inside text-slate-600 space-y-1">
+                  {creature.how_to_get.map((method) => (
+                    <li key={method}>{method}</li>
+                  ))}
+                </ul>
+              </div>
+            ) : (
+              <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
+                <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4">
+                  How to Get {creature.name}
+                </h2>
+                <p className="text-slate-500">Acquisition method not confirmed yet. We&apos;ll update this as soon as the community verifies it.</p>
+              </div>
+            )}
+
+            {(creature.moves && creature.moves.length > 0) ? (
+              <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
+                <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4">
+                  Moves
+                </h2>
+                <div className="grid gap-3">
+                  {creature.moves.map((move) => (
+                    <div key={move.name} className="flex items-center justify-between p-3 bg-slate-50 rounded-xl border border-slate-100">
+                      <div>
+                        <div className="font-semibold text-slate-900">{move.name}</div>
+                        {move.description && (
+                          <div className="text-xs text-slate-500">{move.description}</div>
+                        )}
+                      </div>
+                      <div className="flex items-center gap-2 text-sm">
+                        <span className="bg-indigo-100 text-indigo-700 px-2 py-1 rounded text-xs font-semibold">{move.type}</span>
+                        {move.power && <span className="text-slate-600">PWR {move.power}</span>}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
+                <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4">
+                  Moves
+                </h2>
+                <p className="text-slate-500">Move list coming soon. We&apos;re compiling verified moves for {creature.name}.</p>
+              </div>
+            )}
+
+            {(creature.evolutions && creature.evolutions.length > 0) ? (
+              <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
+                <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4">
+                  Evolution
+                </h2>
+                <div className="flex flex-wrap items-center gap-3">
+                  {creature.evolutions.map((evo, idx) => (
+                    <div key={idx} className="flex items-center gap-3">
+                      {evo.from && <span className="font-semibold text-slate-700">{evo.from}</span>}
+                      <span className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-semibold">{evo.condition}</span>
+                      <span className="font-semibold text-slate-900">{evo.to}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : null}
 
             <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
               <h2 className="font-headline text-2xl font-bold text-slate-900 mb-6">
                 Base Stats
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <StatBox icon={Heart} label="HP" value={stats.hp || 0} />
-                <StatBox icon={Sword} label="Attack" value={stats.attack || 0} />
-                <StatBox icon={Shield} label="Defense" value={stats.defense || 0} />
-                <StatBox icon={Sparkles} label="Sp. Attack" value={stats.sp_atk || 0} />
-                <StatBox icon={Snowflake} label="Sp. Defense" value={stats.sp_def || 0} />
-                <StatBox icon={Zap} label="Speed" value={stats.speed || 0} />
+                <StatBox icon={Heart} label="HP" value={stats.hp ?? null} />
+                <StatBox icon={Sword} label="Attack" value={stats.attack ?? null} />
+                <StatBox icon={Shield} label="Defense" value={stats.defense ?? null} />
+                <StatBox icon={Sparkles} label="Sp. Attack" value={stats.sp_atk ?? null} />
+                <StatBox icon={Snowflake} label="Sp. Defense" value={stats.sp_def ?? null} />
+                <StatBox icon={Zap} label="Speed" value={stats.speed ?? null} />
               </div>
             </div>
 
@@ -163,7 +253,7 @@ function StatBox({
 }: {
   icon: React.ComponentType<{ className?: string }>;
   label: string;
-  value: number;
+  value: number | null;
 }) {
   return (
     <div className="bg-slate-50 rounded-xl p-4 border border-slate-100 flex items-center gap-4">
@@ -174,7 +264,7 @@ function StatBox({
         <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">
           {label}
         </div>
-        <div className="text-xl font-bold text-slate-900">{value}</div>
+        <div className="text-xl font-bold text-slate-900">{value ?? "?"}</div>
       </div>
     </div>
   );

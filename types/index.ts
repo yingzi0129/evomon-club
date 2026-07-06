@@ -15,6 +15,9 @@ export interface Creature {
   locations: string[];
   description: string;
   image: string;
+  how_to_get?: string[];
+  moves?: { name: string; type: string; power?: number; description?: string }[];
+  evolutions?: { from?: string; to: string; condition: string }[];
 }
 
 export interface Code {

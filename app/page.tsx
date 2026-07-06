@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
-import { Gift, TrendingUp, Search, Smartphone, CheckCircle, ArrowRight } from "lucide-react";
+import { Gift, TrendingUp, Search, Smartphone, CheckCircle } from "lucide-react";
 import codesData from "@/data/codes.json";
 
 export const metadata: Metadata = {
@@ -210,22 +210,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Bottom CTA */}
-      <section className="max-w-4xl mx-auto px-4 py-20 text-center">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 font-headline">
-          Never miss a new code
-        </h2>
-        <p className="text-lg text-slate-600 mb-8">
-          Check back regularly or bookmark this page for the latest active codes and tier updates.
-        </p>
-        <Link
-          href="/codes"
-          className="inline-flex items-center gap-2 bg-cta hover:bg-cta-hover text-white text-lg font-bold py-4 px-10 rounded-full transition-all shadow-lg hover:shadow-xl"
-        >
-          <ArrowRight className="w-5 h-5" />
-          Browse Active Codes
-        </Link>
-      </section>
     </>
   );
 }

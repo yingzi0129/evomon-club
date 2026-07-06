@@ -135,7 +135,7 @@
       "type": "Electric",
       "base_stats": {},
       "locations": [],
-      "description": "",
+      "description": "No detailed stats available for Boltonia yet. We're working to verify its base stats and locations.",
       "image": "https://cdn.evomon.club/creatures/boltonia.jpg"
     },
     {
@@ -992,7 +992,7 @@
       "type": "Normal",
       "base_stats": {},
       "locations": [],
-      "description": "",
+      "description": "No detailed stats available for Rank yet. We're working to verify its base stats and locations.",
       "image": "/placeholder-creature.svg"
     },
     {
@@ -1057,7 +1057,7 @@
       "type": "Ground",
       "base_stats": {},
       "locations": [],
-      "description": "",
+      "description": "No detailed stats available for Spikumane yet. We're working to verify its base stats and locations.",
       "image": "https://cdn.evomon.club/creatures/spikumane.png"
     },
     {
@@ -1212,7 +1212,7 @@
       "type": "Steel",
       "base_stats": {},
       "locations": [],
-      "description": "",
+      "description": "No detailed stats available for Tinkore yet. We're working to verify its base stats and locations.",
       "image": "https://cdn.evomon.club/creatures/tinkore.jpg"
     },
     {
@@ -1223,7 +1223,7 @@
       "type": "Bug",
       "base_stats": {},
       "locations": [],
-      "description": "",
+      "description": "No detailed stats available for Twirlby yet. We're working to verify its base stats and locations.",
       "image": "https://cdn.evomon.club/creatures/twirlby.png"
     },
     {

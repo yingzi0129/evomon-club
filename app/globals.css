@@ -63,6 +63,8 @@
   }
 
   .text-gradient-indigo {
+    /* Fallback to solid color for browsers where bg-clip-text renders as a block */
+    color: #4f46e5;
     @apply bg-clip-text text-transparent;
     background-image: linear-gradient(to right, #4f46e5, #818cf8);
   }
