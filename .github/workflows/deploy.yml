@@ -23,14 +23,8 @@ jobs:
         with:
           node-version: 20
 
-      - name: Configure npm registry
-        run: |
-          rm -f ~/.npmrc
-          echo "registry=https://registry.npmjs.org" > ~/.npmrc
-          npm config get registry
-
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --frozen-lockfile --registry https://registry.npmjs.org
 
       - name: Build
         run: yarn build
