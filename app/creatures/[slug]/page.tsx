@@ -21,11 +21,15 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const creature = creaturesData.creatures.find((c) => c.slug === params.slug);
   if (!creature) return { title: "Not Found" };
+  const rarity = creature.rarity && creature.rarity !== "Common" ? `${creature.rarity} ` : "";
+  const typeText = creature.type ? `${creature.type} ` : "";
+  const title = `${creature.name} - ${rarity}${typeText}Evomon | Stats, Location & Evolution`;
+  const description = `${creature.name} is a ${rarity}${typeText}Evomon with base stats, catch locations, evolution line, and how to get it. ${creature.description || ""}`;
   return {
-    title: `${creature.name} Stats & Rarity - Evomon.club`,
-    description: `See ${creature.name}'s stats, type, rarity, and locations in Evomon. ${creature.description}`,
+    title,
+    description: description.slice(0, 160),
     alternates: {
-      canonical: `https://evomon.club/creatures/${creature.slug}`,
+      canonical: `https://evomon.club/creatures/${creature.slug}/`,
     },
   };
 }
@@ -141,7 +145,7 @@ export default function CreatureDetailPage({ params }: PageProps) {
                   <MapPin className="w-5 h-5 text-indigo-500" />
                   Locations
                 </h2>
-                <p className="text-slate-500">Location data coming soon. We&apos;re mapping where {creature.name} appears in Evomon.</p>
+                <p className="text-slate-500">Location data for {creature.name} is not confirmed in public sources yet.</p>
               </div>
             )}
 
@@ -161,7 +165,7 @@ export default function CreatureDetailPage({ params }: PageProps) {
                 <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4">
                   How to Get {creature.name}
                 </h2>
-                <p className="text-slate-500">Acquisition method not confirmed yet. We&apos;ll update this as soon as the community verifies it.</p>
+                <p className="text-slate-500">How to obtain {creature.name} is not confirmed in public sources yet.</p>
               </div>
             )}
 
@@ -192,7 +196,7 @@ export default function CreatureDetailPage({ params }: PageProps) {
                 <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4">
                   Moves
                 </h2>
-                <p className="text-slate-500">Move list coming soon. We&apos;re compiling verified moves for {creature.name}.</p>
+                <p className="text-slate-500">Moves for {creature.name} are not fully documented in public sources yet.</p>
               </div>
             )}
 
@@ -211,7 +215,14 @@ export default function CreatureDetailPage({ params }: PageProps) {
                   ))}
                 </div>
               </div>
-            ) : null}
+            ) : (
+              <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
+                <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4">
+                  Evolution
+                </h2>
+                <p className="text-slate-500">Evolution details for {creature.name} are not confirmed in public sources yet.</p>
+              </div>
+            )}
 
             <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
               <h2 className="font-headline text-2xl font-bold text-slate-900 mb-6">

@@ -24,12 +24,6 @@ export const metadata: Metadata = {
     "Get active Evomon codes today, check the latest tier list, and browse all creatures. Fast, mobile-friendly fan-made guide for Roblox players.",
   keywords: ["evomon", "evomon codes", "evomon tier list", "evomon guide", "evomon creatures"],
   metadataBase: new URL("https://evomon.club"),
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "64x64 32x32 16x16", type: "image/x-icon" },
-      { url: "/icon.svg", type: "image/svg+xml" },
-    ],
-  },
   openGraph: {
     title: "Evomon Guide & Codes | Active Today - Evomon.club",
     description:
@@ -53,6 +47,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${sora.variable} ${manrope.variable}`}>
+      <head>
+        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="64x64 32x32 16x16" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </head>
       <body className="min-h-screen flex flex-col font-body bg-background text-foreground">
         <Navbar />
         <main className="flex-grow pt-20 md:pt-24">{children}</main>

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-05T14:28:30.816380+00:00",
+  "updated_at": "2026-07-07T12:00:00+00:00",
   "creatures": [
     {
       "id": "arcapex",
@@ -9,15 +9,28 @@
       "type": "Electric",
       "base_stats": {
         "hp": 90,
+        "attack": 115,
+        "defense": 87,
         "sp_atk": 91,
         "sp_def": 69,
         "speed": 108,
-        "defense": 87,
-        "attack": 115
+        "bst": 560
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/arcapex.png"
+      "locations": [
+        "Thunder Cliffs"
+      ],
+      "description": "The apex of the Arcub line, a storm-maned beast with lightning for a silhouette. Arcapex does not chase its prey; it simply arrives first, and the thunderclap follows a heartbeat later.",
+      "image": "https://cdn.evomon.club/creatures/arcapex.png",
+      "how_to_get": [
+        "Found in Thunder Cliffs."
+      ],
+      "evolutions": [
+        {
+          "from": "Arcub",
+          "to": "Arcapex",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "arcub",
@@ -27,15 +40,28 @@
       "type": "Electric",
       "base_stats": {
         "hp": 65,
+        "attack": 82,
+        "defense": 62,
         "sp_atk": 64,
         "sp_def": 50,
         "speed": 77,
-        "defense": 62,
-        "attack": 82
+        "bst": 400
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/arcub.png"
+      "locations": [
+        "Raven Ridge"
+      ],
+      "description": "A static-charged cub whose bolt-shaped ears twitch toward any nearby spark. Arcub headbutts everything it likes to share a little jolt — consider it a love-bite from the future Arcapex.",
+      "image": "https://cdn.evomon.club/creatures/arcub.png",
+      "how_to_get": [
+        "Found in Raven Ridge."
+      ],
+      "evolutions": [
+        {
+          "from": "Arcub",
+          "to": "Arcapex",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "astraknight",
@@ -45,15 +71,22 @@
       "type": "Fighting",
       "base_stats": {
         "hp": 88,
+        "attack": 108,
+        "defense": 94,
         "sp_atk": 50,
         "sp_def": 80,
         "speed": 90,
-        "defense": 94,
-        "attack": 108
+        "bst": 510
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/astraknight.png"
+      "locations": [
+        "Battle Pass"
+      ],
+      "description": "A crystal-armored duelist earned through the Battle Pass, its star-flecked plate glinting like a night sky. Astraknight trains alone at dawn, and its blade arm answers challenges before it does.",
+      "image": "https://cdn.evomon.club/creatures/astraknight.png",
+      "how_to_get": [
+        "Found in Battle Pass."
+      ],
+      "evolutions": []
     },
     {
       "id": "blazgrowl",
@@ -63,15 +96,33 @@
       "type": "Fire",
       "base_stats": {
         "hp": 58,
+        "attack": 74,
+        "defense": 64,
         "sp_atk": 56,
         "sp_def": 55,
         "speed": 62,
-        "defense": 64,
-        "attack": 74
+        "bst": 369
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/blazgrowl.png"
+      "locations": [
+        "Via evo"
+      ],
+      "description": "Blazpup's Evolved form, bold and fast. Flames dance along its back as it runs. it hunts with forced speed, using controlled fire to mark its territory.",
+      "image": "https://cdn.evomon.club/creatures/blazgrowl.png",
+      "how_to_get": [
+        "Found in Via evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Blazpup",
+          "to": "Blazgrowl",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Blazgrowl",
+          "to": "Blazmane",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "blazmane",
@@ -81,15 +132,33 @@
       "type": "Fire",
       "base_stats": {
         "hp": 78,
+        "attack": 105,
+        "defense": 93,
         "sp_atk": 79,
         "sp_def": 72,
         "speed": 93,
-        "defense": 93,
-        "attack": 105
+        "bst": 520
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/blazmane.png"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "its Golden mane blazes like a wildfire, and its breath can melt rock. Blazmane leads its pack with unshakable pride and unmatched firepower.",
+      "image": "https://cdn.evomon.club/creatures/blazmane.png",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Blazpup",
+          "to": "Blazgrowl",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Blazgrowl",
+          "to": "Blazmane",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "blazpup",
@@ -99,15 +168,33 @@
       "type": "Fire",
       "base_stats": {
         "hp": 37,
+        "attack": 56,
+        "defense": 42,
         "sp_atk": 43,
         "sp_def": 41,
         "speed": 44,
-        "defense": 42,
-        "attack": 56
+        "bst": 263
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/blazpup.png"
+      "locations": [
+        "Starter Zone"
+      ],
+      "description": "A curious, Fiery fox cub with a gentle flame tuft. its small, warm tail glows when it's excited. it plays near campfires, never letting its own fire burn out of control.",
+      "image": "https://cdn.evomon.club/creatures/blazpup.png",
+      "how_to_get": [
+        "Found in Starter Zone."
+      ],
+      "evolutions": [
+        {
+          "from": "Blazpup",
+          "to": "Blazgrowl",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Blazgrowl",
+          "to": "Blazmane",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "bluebird",
@@ -117,15 +204,28 @@
       "type": "Flying",
       "base_stats": {
         "hp": 58,
+        "attack": 62,
+        "defense": 45,
         "sp_atk": 66,
         "sp_def": 50,
         "speed": 86,
-        "defense": 45,
-        "attack": 62
+        "bst": 367
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/bluebird.png"
+      "locations": [
+        "Raven Ridge"
+      ],
+      "description": "A small, energetic bird that feeds on static electricity. its wings crackle with tiny sparks when it flies, and it loves to perch on power lines. bluebird's cheerful chirps sound like the hum of electricity.",
+      "image": "https://cdn.evomon.club/creatures/bluebird.png",
+      "how_to_get": [
+        "Found in Raven Ridge."
+      ],
+      "evolutions": [
+        {
+          "from": "Bluebird",
+          "to": "Volcrest",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "boltonia",
@@ -133,10 +233,24 @@
       "slug": "boltonia",
       "rarity": "Common",
       "type": "Electric",
-      "base_stats": {},
-      "locations": [],
-      "description": "No detailed stats available for Boltonia yet. We're working to verify its base stats and locations.",
-      "image": "https://cdn.evomon.club/creatures/boltonia.jpg"
+      "base_stats": {
+        "hp": 75,
+        "attack": 91,
+        "defense": 72,
+        "sp_atk": 93,
+        "sp_def": 74,
+        "speed": 111,
+        "bst": 516
+      },
+      "locations": [
+        "Raven Ridge"
+      ],
+      "description": "A midnight stallion with a mane of white fire and lightning dancing across its chest. Boltonia has only been teased by the devs so far — keep an eye on the official Discord for when it gallops in.",
+      "image": "https://cdn.evomon.club/creatures/boltonia.jpg",
+      "how_to_get": [
+        "Found in Raven Ridge."
+      ],
+      "evolutions": []
     },
     {
       "id": "bubblade",
@@ -146,15 +260,33 @@
       "type": "Water",
       "base_stats": {
         "hp": 86,
+        "attack": 81,
+        "defense": 78,
         "sp_atk": 100,
         "sp_def": 85,
         "speed": 91,
-        "defense": 78,
-        "attack": 81
+        "bst": 521
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/bubblade.png"
+      "locations": [
+        "Evolution"
+      ],
+      "description": "With a blade forged from its own water energy Bubblade moves like a storm. flights with calm precision, turning every tide into a graceful strike.",
+      "image": "https://cdn.evomon.club/creatures/bubblade.png",
+      "how_to_get": [
+        "Found in Evolution."
+      ],
+      "evolutions": [
+        {
+          "from": "Bubble",
+          "to": "Bubboxer",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Bubboxer",
+          "to": "Bubblade",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "bubble",
@@ -164,15 +296,33 @@
       "type": "Water",
       "base_stats": {
         "hp": 44,
+        "attack": 43,
+        "defense": 41,
         "sp_atk": 47,
         "sp_def": 45,
         "speed": 40,
-        "defense": 41,
-        "attack": 43
+        "bst": 260
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/bubble.png"
+      "locations": [
+        "Starter Zone"
+      ],
+      "description": "a round gentle water-type that blows soft bubbles to stay safe. its fluffy collar traps moisture, keeping it cool even in dry heat. Bubble travels in groups, using bubble signals to alert friends of danger.",
+      "image": "https://cdn.evomon.club/creatures/bubble.png",
+      "how_to_get": [
+        "Found in Starter Zone."
+      ],
+      "evolutions": [
+        {
+          "from": "Bubble",
+          "to": "Bubboxer",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Bubboxer",
+          "to": "Bubblade",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "bubboxer",
@@ -182,33 +332,69 @@
       "type": "Water",
       "base_stats": {
         "hp": 64,
+        "attack": 61,
+        "defense": 59,
         "sp_atk": 66,
         "sp_def": 60,
         "speed": 59,
-        "defense": 59,
-        "attack": 61
+        "bst": 369
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/bubboxer.png"
+      "locations": [
+        "Evolution"
+      ],
+      "description": "Bubble's evolved form, now quick and bold. it wraps itself in a cool water scarf and punches with controlled splashes. Bubboxer trains daily to master its strength, never wasting a single drop.",
+      "image": "https://cdn.evomon.club/creatures/bubboxer.png",
+      "how_to_get": [
+        "Found in Evolution."
+      ],
+      "evolutions": [
+        {
+          "from": "Bubble",
+          "to": "Bubboxer",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Bubboxer",
+          "to": "Bubblade",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "budling",
       "name": "Budling",
       "slug": "budling",
       "rarity": "Common",
-      "type": "Dragon",
+      "type": "Grass",
       "base_stats": {
         "hp": 42,
+        "attack": 44,
+        "defense": 37,
         "sp_atk": 35,
         "sp_def": 52,
         "speed": 45,
-        "defense": 37,
-        "attack": 44
+        "bst": 255
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/budling.png"
+      "locations": [
+        "Verdant Valley"
+      ],
+      "description": "A tiny seed creature wrapped in a leafy blanket. it drifts on the wind, protected by its torn, cozy leaves. Budling grows stronger with sunlight, and the red bud on it head bloom into a great flower one day.",
+      "image": "https://cdn.evomon.club/creatures/budling.png",
+      "how_to_get": [
+        "Found in Verdant Valley."
+      ],
+      "evolutions": [
+        {
+          "from": "Budling",
+          "to": "Florawn",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Florawn",
+          "to": "Silvanarch",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "chirphantom",
@@ -218,15 +404,33 @@
       "type": "Flying",
       "base_stats": {
         "hp": 76,
+        "attack": 104,
+        "defense": 77,
         "sp_atk": 65,
         "sp_def": 79,
         "speed": 103,
-        "defense": 77,
-        "attack": 104
+        "bst": 504
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/chirphantom.png"
+      "locations": [
+        "Via evo"
+      ],
+      "description": "The final form of the Chirplume line, a black-feathered raptor that glides without a sound. Its red-tipped wings vanish against the dusk sky, so most Evomon never see it swoop until it's already gone.",
+      "image": "https://cdn.evomon.club/creatures/chirphantom.png",
+      "how_to_get": [
+        "Found in Via evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Chirppy",
+          "to": "Chirplume",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Chirplume",
+          "to": "Chirphantom",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "chirplume",
@@ -236,15 +440,33 @@
       "type": "Flying",
       "base_stats": {
         "hp": 54,
+        "attack": 64,
+        "defense": 55,
         "sp_atk": 56,
         "sp_def": 56,
         "speed": 73,
-        "defense": 55,
-        "attack": 64
+        "bst": 358
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/chirplume.png"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "Chirppy's Evolved form, bold and boisterous. its wings are strong enough to stir small grunt, and its calls echo across the sky. it patrols its territory with noisy pride, warning others away.",
+      "image": "https://cdn.evomon.club/creatures/chirplume.png",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Chirppy",
+          "to": "Chirplume",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Chirplume",
+          "to": "Chirphantom",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "chirppy",
@@ -254,15 +476,33 @@
       "type": "Flying",
       "base_stats": {
         "hp": 39,
+        "attack": 48,
+        "defense": 40,
         "sp_atk": 38,
         "sp_def": 40,
         "speed": 52,
-        "defense": 40,
-        "attack": 48
+        "bst": 257
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/chirppy.png"
+      "locations": [
+        "Raven Ridge"
+      ],
+      "description": "A plump, carefree bird with a lazy attitude. its red crest bobs as it hops, and its call is loud and cheerful. it loves to sing from high branches, never worrying about the world below.",
+      "image": "https://cdn.evomon.club/creatures/chirppy.png",
+      "how_to_get": [
+        "Found in Raven Ridge."
+      ],
+      "evolutions": [
+        {
+          "from": "Chirppy",
+          "to": "Chirplume",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Chirplume",
+          "to": "Chirphantom",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "chitaladin",
@@ -272,15 +512,33 @@
       "type": "Bug",
       "base_stats": {
         "hp": 80,
+        "attack": 91,
+        "defense": 78,
         "sp_atk": 88,
         "sp_def": 82,
         "speed": 92,
-        "defense": 78,
-        "attack": 91
+        "bst": 511
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/chitaladin.png"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "The Chitmite line's final form, an armored paladin whose chitin carries a toxic sheen. Chitaladin fights with slow, deliberate strikes; one clean hit can leave venom working long after the duel ends.",
+      "image": "https://cdn.evomon.club/creatures/chitaladin.png",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Chitmite",
+          "to": "Chitgladi",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Chitgladi",
+          "to": "Chitaladin",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "chitgladi",
@@ -290,15 +548,33 @@
       "type": "Bug",
       "base_stats": {
         "hp": 57,
+        "attack": 65,
+        "defense": 55,
         "sp_atk": 63,
         "sp_def": 58,
         "speed": 66,
-        "defense": 55,
-        "attack": 65
+        "bst": 364
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/chitgladi.png"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "Chitmite's evolved form, a gladiator in polished purple armor. Chitgladi picks fights with Evomon twice its size purely for practice — every dent in its chitin is a lesson it refuses to forget.",
+      "image": "https://cdn.evomon.club/creatures/chitgladi.png",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Chitmite",
+          "to": "Chitgladi",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Chitgladi",
+          "to": "Chitaladin",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "chitmite",
@@ -308,15 +584,33 @@
       "type": "Bug",
       "base_stats": {
         "hp": 40,
+        "attack": 46,
+        "defense": 40,
         "sp_atk": 45,
         "sp_def": 42,
         "speed": 47,
-        "defense": 40,
-        "attack": 46
+        "bst": 260
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/chitmite.png"
+      "locations": [
+        "Canyon Oasis"
+      ],
+      "description": "A palm-sized mite in purple chitin that scurries between the rocks of Canyon Oasis. Chitmite sharpens its tiny claws obsessively, practicing for the warrior it will one day become.",
+      "image": "https://cdn.evomon.club/creatures/chitmite.png",
+      "how_to_get": [
+        "Found in Canyon Oasis."
+      ],
+      "evolutions": [
+        {
+          "from": "Chitmite",
+          "to": "Chitgladi",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Chitgladi",
+          "to": "Chitaladin",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "clampip",
@@ -326,15 +620,33 @@
       "type": "Water",
       "base_stats": {
         "hp": 43,
+        "attack": 45,
+        "defense": 51,
         "sp_atk": 41,
         "sp_def": 39,
         "speed": 37,
-        "defense": 51,
-        "attack": 45
+        "bst": 256
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/clampip.png"
+      "locations": [
+        "Petal Pond"
+      ],
+      "description": "A stubborn little shellfish from Petal Pond that clamps shut at the first hint of trouble. Anglers say prying a Clampip open is harder than catching one — it simply waits you out, then evolves into Clamwhirl.",
+      "image": "https://cdn.evomon.club/creatures/clampip.png",
+      "how_to_get": [
+        "Found in Petal Pond."
+      ],
+      "evolutions": [
+        {
+          "from": "Clampip",
+          "to": "Clamwhirl",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Clamwhirl",
+          "to": "Clamspire",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "clamspire",
@@ -344,15 +656,33 @@
       "type": "Water",
       "base_stats": {
         "hp": 85,
+        "attack": 105,
+        "defense": 100,
         "sp_atk": 65,
         "sp_def": 75,
         "speed": 74,
-        "defense": 100,
-        "attack": 105
+        "bst": 504
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/clamspire.png"
+      "locations": [
+        "From Evo"
+      ],
+      "description": "its shell opens to unleash a raging water vortex, sucking foes into its depths. Clamspire controls the ocean's currents, able to create whirlpools that shallow ships whole.",
+      "image": "https://cdn.evomon.club/creatures/clamspire.png",
+      "how_to_get": [
+        "Found in From Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Clampip",
+          "to": "Clamwhirl",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Clamwhirl",
+          "to": "Clamspire",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "clamwhirl",
@@ -362,51 +692,95 @@
       "type": "Water",
       "base_stats": {
         "hp": 60,
+        "attack": 70,
+        "defense": 71,
         "sp_atk": 51,
         "sp_def": 54,
         "speed": 52,
-        "defense": 71,
-        "attack": 70
+        "bst": 358
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/clamwhirl.png"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "Clampips evolved form, now a gentle water guardian, its shell opens to reveal a hidden pool of glowing water, where a tiny spirit rests. Clamwhirls calms rough seas with its soft light, protecting travelerss from storms.",
+      "image": "https://cdn.evomon.club/creatures/clamwhirl.png",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Clampip",
+          "to": "Clamwhirl",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Clamwhirl",
+          "to": "Clamspire",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "datubud",
       "name": "Datubud",
       "slug": "datubud",
       "rarity": "Common",
-      "type": "Dragon",
+      "type": "Grass",
       "base_stats": {
         "hp": 58,
+        "attack": 46,
+        "defense": 56,
         "sp_atk": 76,
         "sp_def": 57,
         "speed": 70,
-        "defense": 56,
-        "attack": 46
+        "bst": 363
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/datubud.jpg"
+      "locations": [
+        "Amber Acres"
+      ],
+      "description": "A shy sprout-child from Amber Acres with curly leaf-locks and long petal ears. Datubud hears feelings before it hears words, and hides behind its own hands when the emotions get too loud.",
+      "image": "https://cdn.evomon.club/creatures/datubud.jpg",
+      "how_to_get": [
+        "Found in Amber Acres."
+      ],
+      "evolutions": [
+        {
+          "from": "Datubud",
+          "to": "Datunymph",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "datunymph",
       "name": "Datunymph",
       "slug": "datunymph",
       "rarity": "Common",
-      "type": "Dragon",
+      "type": "Grass",
       "base_stats": {
         "hp": 81,
+        "attack": 65,
+        "defense": 79,
         "sp_atk": 107,
         "sp_def": 80,
         "speed": 97,
-        "defense": 79,
-        "attack": 65
+        "bst": 509
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/datunymph.jpg"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "Datubud's evolved form,  a graceful flower monarch. its body blooms like a living blossom, and its arms bear small pink flowers. Datunymph rules over meadows, making plants grow with a wave of its hand.",
+      "image": "https://cdn.evomon.club/creatures/datunymph.jpg",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Datubud",
+          "to": "Datunymph",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "emfox",
@@ -416,15 +790,33 @@
       "type": "Fire",
       "base_stats": {
         "hp": 56,
+        "attack": 60,
+        "defense": 48,
         "sp_atk": 70,
         "sp_def": 48,
         "speed": 78,
-        "defense": 48,
-        "attack": 60
+        "bst": 360
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/emfox.png"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "Sparkit's evolved form, now a clever trickster. it wears dark leafy robes and silver rings, using fire magic to play pranks. its quick-witted, always one step ahead of its foes.",
+      "image": "https://cdn.evomon.club/creatures/emfox.png",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Sparkit",
+          "to": "Emfox",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Emfox",
+          "to": "Empixy",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "empixy",
@@ -434,33 +826,69 @@
       "type": "Fire",
       "base_stats": {
         "hp": 78,
+        "attack": 81,
+        "defense": 68,
         "sp_atk": 100,
         "sp_def": 68,
         "speed": 109,
-        "defense": 68,
-        "attack": 81
+        "bst": 504
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/empixy.png"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "A master of flames magic, its leafy cloak shimmers with embers. it controls fire with graceful gestures, turning even the coldest areas into blazing infernos.",
+      "image": "https://cdn.evomon.club/creatures/empixy.png",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Sparkit",
+          "to": "Emfox",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Emfox",
+          "to": "Empixy",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "florawn",
       "name": "Florawn",
       "slug": "florawn",
       "rarity": "Common",
-      "type": "Dragon",
+      "type": "Grass",
       "base_stats": {
         "hp": 60,
+        "attack": 62,
+        "defense": 53,
         "sp_atk": 50,
         "sp_def": 73,
         "speed": 64,
-        "defense": 53,
-        "attack": 62
+        "bst": 362
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/florawn.png"
+      "locations": [
+        "Via evo"
+      ],
+      "description": "Budling's evolved form, a powerful plant brute. Its arms are thick, vine-like muscles, and a vibrant red flower blooms on its head. Florawn is the guardian of the forest, using its leafy strength to protect its home.",
+      "image": "https://cdn.evomon.club/creatures/florawn.png",
+      "how_to_get": [
+        "Found in Via evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Budling",
+          "to": "Florawn",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Florawn",
+          "to": "Silvanarch",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "fluffastar",
@@ -470,15 +898,28 @@
       "type": "Rock",
       "base_stats": {
         "hp": 78,
+        "attack": 73,
+        "defense": 98,
         "sp_atk": 102,
         "sp_def": 75,
         "speed": 94,
-        "defense": 98,
-        "attack": 73
+        "bst": 520
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/fluffastar.png"
+      "locations": [
+        "Verdant Valley"
+      ],
+      "description": "Fluffet's evolved form, now strong and steady. its wool hardens like armor, and the stones on its body sharpen into a rocky spikes. Fluffstar stands firm against avalanches, protecting its hard with unshakable resolve.",
+      "image": "https://cdn.evomon.club/creatures/fluffastar.png",
+      "how_to_get": [
+        "Found in Verdant Valley."
+      ],
+      "evolutions": [
+        {
+          "from": "Fluffet",
+          "to": "Fluffastar",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "fluffet",
@@ -488,15 +929,28 @@
       "type": "Rock",
       "base_stats": {
         "hp": 56,
+        "attack": 55,
+        "defense": 70,
         "sp_atk": 63,
         "sp_def": 53,
         "speed": 67,
-        "defense": 70,
-        "attack": 55
+        "bst": 364
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/fluffet.png"
+      "locations": [
+        "Rocky Ridge"
+      ],
+      "description": "Don't let the wool fool you — under Fluffet's cream fluff sits a core of solid stone. It grazes along Rocky Ridge, headbutting boulders to keep its hide dense, until the day it evolves into Fluffastar.",
+      "image": "https://cdn.evomon.club/creatures/fluffet.png",
+      "how_to_get": [
+        "Found in Rocky Ridge."
+      ],
+      "evolutions": [
+        {
+          "from": "Fluffet",
+          "to": "Fluffastar",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "flutterby",
@@ -506,33 +960,64 @@
       "type": "Bug",
       "base_stats": {
         "hp": 58,
+        "attack": 67,
+        "defense": 66,
         "sp_atk": 49,
         "sp_def": 52,
         "speed": 74,
-        "defense": 66,
-        "attack": 67
+        "bst": 366
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/flutterby.png"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "Humdings evolved form. now swift and graceful. it darts through the air with precise control, stabbing at pray with its sharpened proboscis.",
+      "image": "https://cdn.evomon.club/creatures/flutterby.png",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Humding",
+          "to": "Flutterby",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Flutterby",
+          "to": "Twirlby",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "frostelle",
       "name": "Frostelle",
       "slug": "frostelle",
       "rarity": "Common",
-      "type": "Dragon",
+      "type": "Grass",
       "base_stats": {
         "hp": 81,
+        "attack": 80,
+        "defense": 71,
         "sp_atk": 92,
         "sp_def": 81,
         "speed": 113,
-        "defense": 71,
-        "attack": 80
+        "bst": 518
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/frostelle.png"
+      "locations": [
+        "Via evo"
+      ],
+      "description": "Stardrift's evolved form, now a graceful ice-flower spirit. It carries a massive, frozen lotus bloom, its petals as cold as winter ice.\nFrostelle cools the air around it, leaving trails of frost wherever it goes.",
+      "image": "https://cdn.evomon.club/creatures/frostelle.png",
+      "how_to_get": [
+        "Found in Via evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Stardrift",
+          "to": "Frostelle",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "frostlet",
@@ -542,15 +1027,28 @@
       "type": "Ice",
       "base_stats": {
         "hp": 60,
+        "attack": 57,
+        "defense": 53,
         "sp_atk": 66,
         "sp_def": 62,
         "speed": 70,
-        "defense": 53,
-        "attack": 57
+        "bst": 368
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/frostlet.png"
+      "locations": [
+        "Starter pack or Crystal Cascade"
+      ],
+      "description": "A small snow-bird with a plume like frosted glass, obtained from the starter pack or found around Crystal Cascade. Frostlet chirps out little puffs of cold air when it is happy — or when it is aiming.",
+      "image": "https://cdn.evomon.club/creatures/frostlet.png",
+      "how_to_get": [
+        "Found in Starter pack or Crystal Cascade."
+      ],
+      "evolutions": [
+        {
+          "from": "Frostlet",
+          "to": "Frostseer",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "frostseer",
@@ -560,15 +1058,28 @@
       "type": "Ice",
       "base_stats": {
         "hp": 83,
+        "attack": 83,
+        "defense": 75,
         "sp_atk": 102,
         "sp_def": 87,
         "speed": 98,
-        "defense": 75,
-        "attack": 83
+        "bst": 528
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/frostseer.png"
+      "locations": [
+        "Via evo"
+      ],
+      "description": "Frostlet's final form, an owl-like oracle with golden markings and wide frost-white wings. Frostseer is said to read the weather three days out, and its ice attacks arrive just as unerringly.",
+      "image": "https://cdn.evomon.club/creatures/frostseer.png",
+      "how_to_get": [
+        "Found in Via evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Frostlet",
+          "to": "Frostseer",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "gempillar",
@@ -578,15 +1089,28 @@
       "type": "Bug",
       "base_stats": {
         "hp": 52,
+        "attack": 70,
+        "defense": 48,
         "sp_atk": 74,
         "sp_def": 48,
         "speed": 70,
-        "defense": 48,
-        "attack": 70
+        "bst": 362
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/gempillar.png"
+      "locations": [
+        "Canyon Oasis"
+      ],
+      "description": "A larva armored in gold and lapis plates, inching through Canyon Oasis like crawling treasure. Gempillar polishes its own shell against the sandstone — collectors adore it, and it clearly knows.",
+      "image": "https://cdn.evomon.club/creatures/gempillar.png",
+      "how_to_get": [
+        "Found in Canyon Oasis."
+      ],
+      "evolutions": [
+        {
+          "from": "Gempillar",
+          "to": "Gempress",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "gempress",
@@ -596,15 +1120,28 @@
       "type": "Bug",
       "base_stats": {
         "hp": 73,
+        "attack": 98,
+        "defense": 68,
         "sp_atk": 104,
         "sp_def": 68,
         "speed": 97,
-        "defense": 68,
-        "attack": 98
+        "bst": 508
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/gempress.png"
+      "locations": [
+        "Silent Sands"
+      ],
+      "description": "Gempillar's evolved form, a Majestic rotal moth. its wings spread like a king's cape, marked with royal blue and white pattern. Gempress comands light and shadow, using its dazzling wings to entrance foes before striking.",
+      "image": "https://cdn.evomon.club/creatures/gempress.png",
+      "how_to_get": [
+        "Found in Silent Sands."
+      ],
+      "evolutions": [
+        {
+          "from": "Gempillar",
+          "to": "Gempress",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "glacitadel",
@@ -614,15 +1151,33 @@
       "type": "Ice",
       "base_stats": {
         "hp": 75,
+        "attack": 108,
+        "defense": 67,
         "sp_atk": 102,
         "sp_def": 67,
         "speed": 93,
-        "defense": 67,
-        "attack": 108
+        "bst": 512
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/glacitadel.png"
+      "locations": [
+        "Shiver Snows"
+      ],
+      "description": "A Massive crystal crab king, its body covered in diamond-hard ice crystals. its claws can shatter boulders with one strike, and it gaze freezes foes in place. Glacitadel rules the frozen shores with unchallenged power.",
+      "image": "https://cdn.evomon.club/creatures/glacitadel.png",
+      "how_to_get": [
+        "Found in Shiver Snows."
+      ],
+      "evolutions": [
+        {
+          "from": "Glaclide",
+          "to": "Glacone",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Glacone",
+          "to": "Glacitadel",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "glaclide",
@@ -632,15 +1187,33 @@
       "type": "Ice",
       "base_stats": {
         "hp": 38,
+        "attack": 56,
+        "defense": 35,
         "sp_atk": 53,
         "sp_def": 35,
         "speed": 45,
-        "defense": 35,
-        "attack": 56
+        "bst": 262
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/glaclide.png"
+      "locations": [
+        "Shiver Snows"
+      ],
+      "description": "A glossy ice-frog from the Shiver Snows whose skin stays slick with meltwater. Glaclide skates across frozen ponds on its belly, and its bright eyes are usually the only color for miles of white.",
+      "image": "https://cdn.evomon.club/creatures/glaclide.png",
+      "how_to_get": [
+        "Found in Shiver Snows."
+      ],
+      "evolutions": [
+        {
+          "from": "Glaclide",
+          "to": "Glacone",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Glacone",
+          "to": "Glacitadel",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "glacone",
@@ -650,15 +1223,33 @@
       "type": "Ice",
       "base_stats": {
         "hp": 53,
+        "attack": 74,
+        "defense": 48,
         "sp_atk": 73,
         "sp_def": 49,
         "speed": 63,
-        "defense": 48,
-        "attack": 74
+        "bst": 360
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/glacone.png"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "Glaclide's evolved form, crowned with a hood of jagged icicles. Glacone grows a new spike for every blizzard it weathers — trainers count the points to guess how many storms it has survived.",
+      "image": "https://cdn.evomon.club/creatures/glacone.png",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Glaclide",
+          "to": "Glacone",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Glacone",
+          "to": "Glacitadel",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "graycrene",
@@ -668,15 +1259,28 @@
       "type": "Flying",
       "base_stats": {
         "hp": 60,
+        "attack": 78,
+        "defense": 54,
         "sp_atk": 70,
         "sp_def": 65,
         "speed": 73,
-        "defense": 54,
-        "attack": 78
+        "bst": 400
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/graycrene.png"
+      "locations": [
+        "After Boss Fight in King Of Flying"
+      ],
+      "description": "A gray-winged crane with a scarlet crest, earned only after toppling the King of Flying boss fight. Graycrene glides in silence and strikes in bursts, hinting at the storm it becomes as Sundercrene.",
+      "image": "https://cdn.evomon.club/creatures/graycrene.png",
+      "how_to_get": [
+        "Found in After Boss Fight in King Of Flying."
+      ],
+      "evolutions": [
+        {
+          "from": "Graycrene",
+          "to": "Sundercrene",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "gulpfish",
@@ -686,15 +1290,28 @@
       "type": "Water",
       "base_stats": {
         "hp": 82,
+        "attack": 60,
+        "defense": 55,
         "sp_atk": 69,
         "sp_def": 55,
         "speed": 35,
-        "defense": 55,
-        "attack": 60
+        "bst": 356
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/gulpfish.png"
+      "locations": [
+        "Crystal Cascade"
+      ],
+      "description": "A round, cheerful water-type that bounces though waves. its huge mouth can hold gallons of water, which it sprouts at friends and foes alike. Gulpfish loves playing in shallow bays, never taking life too seriously.",
+      "image": "https://cdn.evomon.club/creatures/gulpfish.png",
+      "how_to_get": [
+        "Found in Crystal Cascade."
+      ],
+      "evolutions": [
+        {
+          "from": "Gulpfish",
+          "to": "Mirefish",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "humding",
@@ -704,15 +1321,33 @@
       "type": "Bug",
       "base_stats": {
         "hp": 42,
+        "attack": 47,
+        "defense": 50,
         "sp_atk": 38,
         "sp_def": 37,
         "speed": 51,
-        "defense": 50,
-        "attack": 47
+        "bst": 265
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/humding.png"
+      "locations": [
+        "Silent Sands"
+      ],
+      "description": "A sleepy flower-bug that drifts between blooms, its leafy body and petal head blend perfectly into the garden. it feeds on nectar with its long,soft proboscis, never in a hurry.",
+      "image": "https://cdn.evomon.club/creatures/humding.png",
+      "how_to_get": [
+        "Found in Silent Sands."
+      ],
+      "evolutions": [
+        {
+          "from": "Humding",
+          "to": "Flutterby",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Flutterby",
+          "to": "Twirlby",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "lavarock",
@@ -722,15 +1357,28 @@
       "type": "Fire",
       "base_stats": {
         "hp": 82,
+        "attack": 104,
+        "defense": 105,
         "sp_atk": 77,
         "sp_def": 72,
         "speed": 62,
-        "defense": 105,
-        "attack": 104
+        "bst": 502
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/lavarock.png"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "Lavite's evolved form, a hulking brute of cooled obsidian and open lava veins. Lavarock hits like a rockslide and takes hits just as well — the whole crag shakes when two of them quarrel.",
+      "image": "https://cdn.evomon.club/creatures/lavarock.png",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Lavite",
+          "to": "Lavarock",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "lavite",
@@ -740,69 +1388,136 @@
       "type": "Fire",
       "base_stats": {
         "hp": 62,
+        "attack": 72,
+        "defense": 75,
         "sp_atk": 51,
         "sp_def": 61,
         "speed": 44,
-        "defense": 75,
-        "attack": 72
+        "bst": 365
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/lavite.png"
+      "locations": [
+        "Lava Crag"
+      ],
+      "description": "A chunk of Lava Crag that woke up grumpy. Lavite's cracked stone body glows from the magma inside, and it wanders the crag soaking up heat until it is ready to evolve into Lavarock.",
+      "image": "https://cdn.evomon.club/creatures/lavite.png",
+      "how_to_get": [
+        "Found in Lava Crag."
+      ],
+      "evolutions": [
+        {
+          "from": "Lavite",
+          "to": "Lavarock",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "leafblade",
       "name": "Leafblade",
       "slug": "leafblade",
       "rarity": "Common",
-      "type": "Dragon",
+      "type": "Grass",
       "base_stats": {
         "hp": 77,
+        "attack": 100,
+        "defense": 77,
         "sp_atk": 100,
         "sp_def": 76,
         "speed": 95,
-        "defense": 77,
-        "attack": 100
+        "bst": 525
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/leafblade.png"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "Leafroge's evolved form, all edge and instinct. The leaves along its arms harden into living blades that it sharpens against tree bark before every hunt. Quick and aggressive, it cuts first and asks questions never.",
+      "image": "https://cdn.evomon.club/creatures/leafblade.png",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Leafbun",
+          "to": "Leafroge",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Leafroge",
+          "to": "Leafblade",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "leafbun",
       "name": "Leafbun",
       "slug": "leafbun",
       "rarity": "Common",
-      "type": "Dragon",
+      "type": "Grass",
       "base_stats": {
         "hp": 39,
+        "attack": 50,
+        "defense": 37,
         "sp_atk": 50,
         "sp_def": 37,
         "speed": 49,
-        "defense": 37,
-        "attack": 50
+        "bst": 262
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/leafbun.png"
+      "locations": [
+        "Starting Area"
+      ],
+      "description": "A shy Leafy rabbit that hides in sunlit forests. its large leaf ears help it sense wind and weather, it collects fallen leaves to build a cozy nests.",
+      "image": "https://cdn.evomon.club/creatures/leafbun.png",
+      "how_to_get": [
+        "Found in Starting Area."
+      ],
+      "evolutions": [
+        {
+          "from": "Leafbun",
+          "to": "Leafroge",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Leafroge",
+          "to": "Leafblade",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "leafroge",
       "name": "Leafroge",
       "slug": "leafroge",
       "rarity": "Common",
-      "type": "Dragon",
+      "type": "Grass",
       "base_stats": {
         "hp": 54,
+        "attack": 70,
+        "defense": 55,
         "sp_atk": 70,
         "sp_def": 54,
         "speed": 67,
-        "defense": 55,
-        "attack": 70
+        "bst": 370
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/leafroge.png"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "Leafbun's evolved form, now bold and quick. It Sharpens it's Leaf claws on trees trunks, moved through the forest like a quiet shadow. it defends its territory with precise swift strikes.",
+      "image": "https://cdn.evomon.club/creatures/leafroge.png",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Leafbun",
+          "to": "Leafroge",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Leafroge",
+          "to": "Leafblade",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "mirefish",
@@ -812,15 +1527,28 @@
       "type": "Water",
       "base_stats": {
         "hp": 115,
+        "attack": 80,
+        "defense": 78,
         "sp_atk": 101,
         "sp_def": 78,
         "speed": 50,
-        "defense": 78,
-        "attack": 80
+        "bst": 502
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/mirefish.png"
+      "locations": [
+        "Crystal Cascade"
+      ],
+      "description": "Gulpfish's evolved form, a massive gentle giant. it swings across the open ocean, its body so large that small fish often hide in its shadow. when it breaches the surface, its splash crashes waves that rock nearby boats.",
+      "image": "https://cdn.evomon.club/creatures/mirefish.png",
+      "how_to_get": [
+        "Found in Crystal Cascade."
+      ],
+      "evolutions": [
+        {
+          "from": "Gulpfish",
+          "to": "Mirefish",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "mopebun",
@@ -830,15 +1558,28 @@
       "type": "Normal",
       "base_stats": {
         "hp": 60,
+        "attack": 58,
+        "defense": 58,
         "sp_atk": 64,
         "sp_def": 58,
         "speed": 63,
-        "defense": 58,
-        "attack": 58
+        "bst": 361
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/mopebun.png"
+      "locations": [
+        "Petal Pond"
+      ],
+      "description": "A quiet mushroom bunny that hides in dark forests, its soft cap keeps it safe from rain, and it's long ears helps it sense danger. it hops slowly, leaving tiny spore trails wherever it goes.",
+      "image": "https://cdn.evomon.club/creatures/mopebun.png",
+      "how_to_get": [
+        "Found in Petal Pond."
+      ],
+      "evolutions": [
+        {
+          "from": "Mopebun",
+          "to": "Mopillow",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "mopillow",
@@ -848,15 +1589,28 @@
       "type": "Normal",
       "base_stats": {
         "hp": 85,
+        "attack": 85,
+        "defense": 79,
         "sp_atk": 90,
         "sp_def": 79,
         "speed": 82,
-        "defense": 79,
-        "attack": 85
+        "bst": 500
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/mopillow.png"
+      "locations": [
+        "Via evo"
+      ],
+      "description": "Mopebun grown into a walking cloud of fur. Mopillow spends most of the day dozing, and wild Evomon have been spotted napping against it like a giant pillow. Soft, patient, and heavier than it looks.",
+      "image": "https://cdn.evomon.club/creatures/mopillow.png",
+      "how_to_get": [
+        "Found in Via evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Mopebun",
+          "to": "Mopillow",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "mudbud",
@@ -866,15 +1620,33 @@
       "type": "Ground",
       "base_stats": {
         "hp": 43,
+        "attack": 46,
+        "defense": 44,
         "sp_atk": 43,
         "sp_def": 43,
         "speed": 41,
-        "defense": 44,
-        "attack": 46
+        "bst": 260
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/mudbud.jpg"
+      "locations": [
+        "Amber Acres"
+      ],
+      "description": "A cheerful little bud from the soil of Amber Acres, wearing a rose it grew itself like a tiny hat. Mudbud plants its feet in soft mud, beams at everyone, and is far tougher than its smile suggests.",
+      "image": "https://cdn.evomon.club/creatures/mudbud.jpg",
+      "how_to_get": [
+        "Found in Amber Acres."
+      ],
+      "evolutions": [
+        {
+          "from": "Mudbud",
+          "to": "Mudthorn",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Mudthorn",
+          "to": "Thordlord",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "mudthorn",
@@ -884,15 +1656,33 @@
       "type": "Ground",
       "base_stats": {
         "hp": 60,
+        "attack": 64,
+        "defense": 62,
         "sp_atk": 61,
         "sp_def": 61,
         "speed": 57,
-        "defense": 62,
-        "attack": 64
+        "bst": 365
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/mudthorn.jpg"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "Mudbud's evolved form, its rose now ringed by a lash of thorned vines. Mudthorn keeps its bloom half-closed and its guard up always — the vines strike on their own while the flower watches.",
+      "image": "https://cdn.evomon.club/creatures/mudthorn.jpg",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Mudbud",
+          "to": "Mudthorn",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Mudthorn",
+          "to": "Thordlord",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "pebble",
@@ -902,15 +1692,33 @@
       "type": "Rock",
       "base_stats": {
         "hp": 37,
+        "attack": 40,
+        "defense": 58,
         "sp_atk": 33,
         "sp_def": 57,
         "speed": 27,
-        "defense": 58,
-        "attack": 40
+        "bst": 252
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/pebble.png"
+      "locations": [
+        "Verdant Valley"
+      ],
+      "description": "a tiny timid rock creature that hides under boulders, it wears a heavy stone cap to protect its soft body, and only peaks out when it feels completely safe. it moves slowly, never staying far from its rocky home.",
+      "image": "https://cdn.evomon.club/creatures/pebble.png",
+      "how_to_get": [
+        "Found in Verdant Valley."
+      ],
+      "evolutions": [
+        {
+          "from": "Pebble",
+          "to": "Pebroll",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Pebroll",
+          "to": "Pebgolem",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "pebgolem",
@@ -920,15 +1728,33 @@
       "type": "Rock",
       "base_stats": {
         "hp": 74,
+        "attack": 80,
+        "defense": 115,
         "sp_atk": 71,
         "sp_def": 112,
         "speed": 55,
-        "defense": 115,
-        "attack": 80
+        "bst": 507
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/pebgolem.png"
+      "locations": [
+        "Via evo"
+      ],
+      "description": "The Pebble line's final form, stacked from slabs of mountain rock. Pebgolem moves like a landslide in slow motion; when it plants its feet and guards, whole battle lines grind to a halt.",
+      "image": "https://cdn.evomon.club/creatures/pebgolem.png",
+      "how_to_get": [
+        "Found in Via evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Pebble",
+          "to": "Pebroll",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Pebroll",
+          "to": "Pebgolem",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "pebroll",
@@ -938,15 +1764,33 @@
       "type": "Rock",
       "base_stats": {
         "hp": 51,
+        "attack": 55,
+        "defense": 84,
         "sp_atk": 52,
         "sp_def": 79,
         "speed": 39,
-        "defense": 84,
-        "attack": 55
+        "bst": 360
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/pebroll.png"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "Once Pebble learns to tuck and roll, it becomes Pebroll — a boulder with a face and exactly one plan: curl up and let attacks bounce off. Slow on its feet, stubborn as stone, and very hard to crack.",
+      "image": "https://cdn.evomon.club/creatures/pebroll.png",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Pebble",
+          "to": "Pebroll",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Pebroll",
+          "to": "Pebgolem",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "pummash",
@@ -956,15 +1800,28 @@
       "type": "Fighting",
       "base_stats": {
         "hp": 82,
+        "attack": 117,
+        "defense": 90,
         "sp_atk": 68,
         "sp_def": 69,
         "speed": 88,
-        "defense": 90,
-        "attack": 117
+        "bst": 514
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/pummash.jpg"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "Pummpaw's evolved form, a fierce martial artist. its gloves have hardened into claws gauntlets, and its punches carry the force of a tornado. Pummash trains daily, honing its skills to become the ultimate fighter.",
+      "image": "https://cdn.evomon.club/creatures/pummash.jpg",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Pummpaw",
+          "to": "Pummash",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "pummpaw",
@@ -974,44 +1831,64 @@
       "type": "Fighting",
       "base_stats": {
         "hp": 58,
+        "attack": 83,
+        "defense": 64,
         "sp_atk": 49,
         "sp_def": 50,
         "speed": 63,
-        "defense": 64,
-        "attack": 83
+        "bst": 367
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/pummpaw.jpg"
-    },
-    {
-      "id": "rank",
-      "name": "Rank",
-      "slug": "rank",
-      "rarity": "Unknown",
-      "type": "Normal",
-      "base_stats": {},
-      "locations": [],
-      "description": "No detailed stats available for Rank yet. We're working to verify its base stats and locations.",
-      "image": "/placeholder-creature.svg"
+      "locations": [
+        "Dusk Town"
+      ],
+      "description": "A scrappy little cat with boxing gloves on its paws. it loves to practice jabs and hooks on trees, never backing down from a fight. Pummpaw is brimming with energy, always ready to take on any challenge.",
+      "image": "https://cdn.evomon.club/creatures/pummpaw.jpg",
+      "how_to_get": [
+        "Found in Dusk Town."
+      ],
+      "evolutions": [
+        {
+          "from": "Pummpaw",
+          "to": "Pummash",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "silvanarch",
       "name": "Silvanarch",
       "slug": "silvanarch",
       "rarity": "Common",
-      "type": "Dragon",
+      "type": "Grass",
       "base_stats": {
         "hp": 83,
+        "attack": 88,
+        "defense": 75,
         "sp_atk": 72,
         "sp_def": 102,
         "speed": 90,
-        "defense": 75,
-        "attack": 88
+        "bst": 510
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/silvanarch.png"
+      "locations": [
+        "Via evo"
+      ],
+      "description": "A regal blossom Evomon whose crimson petals unfold like a crown. Silvanarch stands motionless among wildflowers for days at a time, ruling its little patch of meadow and soaking up the sun.",
+      "image": "https://cdn.evomon.club/creatures/silvanarch.png",
+      "how_to_get": [
+        "Found in Via evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Budling",
+          "to": "Florawn",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Florawn",
+          "to": "Silvanarch",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "sparkit",
@@ -1021,15 +1898,33 @@
       "type": "Fire",
       "base_stats": {
         "hp": 40,
+        "attack": 44,
+        "defense": 34,
         "sp_atk": 50,
         "sp_def": 34,
         "speed": 55,
-        "defense": 34,
-        "attack": 44
+        "bst": 257
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/sparkit.png"
+      "locations": [
+        "Lava Crag"
+      ],
+      "description": "A playful fire fox cub with a bright, sunny coat. it bounces through fields, leaving tiny embers in its wake. its fluffy fur keeps it warm, even in the  coldest nights.",
+      "image": "https://cdn.evomon.club/creatures/sparkit.png",
+      "how_to_get": [
+        "Found in Lava Crag."
+      ],
+      "evolutions": [
+        {
+          "from": "Sparkit",
+          "to": "Emfox",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Emfox",
+          "to": "Empixy",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "spikub",
@@ -1039,15 +1934,28 @@
       "type": "Ground",
       "base_stats": {
         "hp": 58,
+        "attack": 55,
+        "defense": 52,
         "sp_atk": 65,
         "sp_def": 75,
         "speed": 70,
-        "defense": 52,
-        "attack": 55
+        "bst": 375
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/spikub.png"
+      "locations": [
+        "Rocky Ridge"
+      ],
+      "description": "A round little boar bristling with gold-tipped quills, rooting happily through the gravel of Rocky Ridge. When startled, Spikub tucks into a spiky ball and simply waits — few predators try twice.",
+      "image": "https://cdn.evomon.club/creatures/spikub.png",
+      "how_to_get": [
+        "Found in Rocky Ridge."
+      ],
+      "evolutions": [
+        {
+          "from": "Spikub",
+          "to": "Spikumane",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "spikumane",
@@ -1055,28 +1963,61 @@
       "slug": "spikumane",
       "rarity": "Common",
       "type": "Ground",
-      "base_stats": {},
-      "locations": [],
-      "description": "No detailed stats available for Spikumane yet. We're working to verify its base stats and locations.",
-      "image": "https://cdn.evomon.club/creatures/spikumane.png"
+      "base_stats": {
+        "hp": 81,
+        "attack": 75,
+        "defense": 73,
+        "sp_atk": 92,
+        "sp_def": 101,
+        "speed": 97,
+        "bst": 519
+      },
+      "locations": [
+        "Crystal Cascade"
+      ],
+      "description": "Spikub evolved form, now a fierce quilled warlord it's back is covered in rows of razor-sharp guills and it charges at foes with unstoppable force spikumane is feared in the forest respected by even the target largest predators.",
+      "image": "https://cdn.evomon.club/creatures/spikumane.png",
+      "how_to_get": [
+        "Found in Crystal Cascade."
+      ],
+      "evolutions": [
+        {
+          "from": "Spikub",
+          "to": "Spikumane",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "stardrift",
       "name": "Stardrift",
       "slug": "stardrift",
       "rarity": "Common",
-      "type": "Dragon",
+      "type": "Grass",
       "base_stats": {
         "hp": 57,
+        "attack": 65,
+        "defense": 51,
         "sp_atk": 68,
         "sp_def": 58,
         "speed": 81,
-        "defense": 51,
-        "attack": 65
+        "bst": 380
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/stardrift.png"
+      "locations": [
+        "Shiver Snows"
+      ],
+      "description": "A wind-blown seed Evomon that drifts over the Shiver Snows wrapped in its own leaves for warmth. Where a Stardrift finally lands, trainers swear something new always grows — sometimes a Frostelle.",
+      "image": "https://cdn.evomon.club/creatures/stardrift.png",
+      "how_to_get": [
+        "Found in Shiver Snows."
+      ],
+      "evolutions": [
+        {
+          "from": "Stardrift",
+          "to": "Frostelle",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "starloop",
@@ -1086,15 +2027,28 @@
       "type": "Psychic",
       "base_stats": {
         "hp": 58,
+        "attack": 60,
+        "defense": 67,
         "sp_atk": 72,
         "sp_def": 53,
         "speed": 53,
-        "defense": 67,
-        "attack": 60
+        "bst": 363
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/starloop.png"
+      "locations": [
+        "Nether Land"
+      ],
+      "description": "A cheerful, ring-chapped psychic creature. it floats through the air, its large purple ring ring humming with energy. starloop uses its orbiting rings to levitate and protect itself from harm.",
+      "image": "https://cdn.evomon.club/creatures/starloop.png",
+      "how_to_get": [
+        "Found in Nether Land."
+      ],
+      "evolutions": [
+        {
+          "from": "Starloop",
+          "to": "Starmuse",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "starmuse",
@@ -1104,15 +2058,28 @@
       "type": "Psychic",
       "base_stats": {
         "hp": 81,
+        "attack": 79,
+        "defense": 94,
         "sp_atk": 115,
         "sp_def": 75,
         "speed": 75,
-        "defense": 94,
-        "attack": 79
+        "bst": 519
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/starmuse.png"
+      "locations": [
+        "Nether Land"
+      ],
+      "description": "Starloop's evolved form, a radiant psychic star. its twin star-topped sashes glow with cosmic energy, swirling around it like magic ribbons. Starmuse can read the stars, predicting its foe's moves before they even strike.",
+      "image": "https://cdn.evomon.club/creatures/starmuse.png",
+      "how_to_get": [
+        "Found in Nether Land."
+      ],
+      "evolutions": [
+        {
+          "from": "Starloop",
+          "to": "Starmuse",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "sundercrene",
@@ -1122,51 +2089,90 @@
       "type": "Flying",
       "base_stats": {
         "hp": 87,
+        "attack": 114,
+        "defense": 73,
         "sp_atk": 87,
         "sp_def": 92,
         "speed": 107,
-        "defense": 73,
-        "attack": 114
+        "bst": 560
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/sundercrene.png"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "Graycrene's final form, part rooster, part thundercloud. Sundercrene's dark wings snap open like a squall, and its dives land before the sound of them does — one of the fastest hitters in the skies.",
+      "image": "https://cdn.evomon.club/creatures/sundercrene.png",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Graycrene",
+          "to": "Sundercrene",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "tarragon",
       "name": "Tarragon",
       "slug": "tarragon",
       "rarity": "Common",
-      "type": "Dragon",
+      "type": "Grass",
       "base_stats": {
         "hp": 87,
+        "attack": 90,
+        "defense": 75,
         "sp_atk": 88,
         "sp_def": 75,
         "speed": 100,
-        "defense": 75,
-        "attack": 90
+        "bst": 515
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/tarragon.png"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "Tarro's fully evolved form, a long jade dragon that weaves between the trees like wind through grass. Elegant, fast, and oddly old-fashioned about manners — it bows before it battles.",
+      "image": "https://cdn.evomon.club/creatures/tarragon.png",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Tarro",
+          "to": "Tarragon",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "tarro",
       "name": "Tarro",
       "slug": "tarro",
       "rarity": "Common",
-      "type": "Dragon",
+      "type": "Grass",
       "base_stats": {
         "hp": 62,
+        "attack": 64,
+        "defense": 53,
         "sp_atk": 52,
         "sp_def": 53,
         "speed": 71,
-        "defense": 53,
-        "attack": 64
+        "bst": 355
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/tarro.png"
+      "locations": [
+        "Murkwood"
+      ],
+      "description": "A pepper-crested hatchling that lurks in the undergrowth of Murkwood, part sprout and part dragon. Tarro nibbles spicy roots to stoke its temper — mock its size now, while you still can.",
+      "image": "https://cdn.evomon.club/creatures/tarro.png",
+      "how_to_get": [
+        "Found in Murkwood."
+      ],
+      "evolutions": [
+        {
+          "from": "Tarro",
+          "to": "Tarragon",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "thordlord",
@@ -1176,15 +2182,33 @@
       "type": "Ground",
       "base_stats": {
         "hp": 84,
+        "attack": 90,
+        "defense": 87,
         "sp_atk": 86,
         "sp_def": 86,
         "speed": 81,
-        "defense": 87,
-        "attack": 90
+        "bst": 514
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/thordlord.jpg"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "The Mudbud line in full bloom: a towering rose royal wrapped in barbed branches. Thornlord's petals look delicate, but its thorn-whips rule the garden — every rose has its tyrant.",
+      "image": "https://cdn.evomon.club/creatures/thordlord.jpg",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Mudbud",
+          "to": "Mudthorn",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Mudthorn",
+          "to": "Thordlord",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "tinkog",
@@ -1194,15 +2218,28 @@
       "type": "Steel",
       "base_stats": {
         "hp": 57,
+        "attack": 50,
+        "defense": 77,
         "sp_atk": 57,
         "sp_def": 75,
         "speed": 46,
-        "defense": 77,
-        "attack": 50
+        "bst": 362
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/tinkog.png"
+      "locations": [
+        "Silent Sands"
+      ],
+      "description": "A lone gear that rolled out of some machine buried beneath Silent Sands and simply decided to live. Tinkog is slow, cheerful, and nearly impossible to dent — no maintenance required, friendship optional.",
+      "image": "https://cdn.evomon.club/creatures/tinkog.png",
+      "how_to_get": [
+        "Found in Silent Sands."
+      ],
+      "evolutions": [
+        {
+          "from": "Tinkog",
+          "to": "Tinkore",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "tinkore",
@@ -1210,10 +2247,30 @@
       "slug": "tinkore",
       "rarity": "Common",
       "type": "Steel",
-      "base_stats": {},
-      "locations": [],
-      "description": "No detailed stats available for Tinkore yet. We're working to verify its base stats and locations.",
-      "image": "https://cdn.evomon.club/creatures/tinkore.jpg"
+      "base_stats": {
+        "hp": 80,
+        "attack": 70,
+        "defense": 108,
+        "sp_atk": 80,
+        "sp_def": 106,
+        "speed": 65,
+        "bst": 509
+      },
+      "locations": [
+        "Silent Sands"
+      ],
+      "description": "Tinkogs evolved form a massive mechanical golem it's body is made of interlocking gears each one glowing with blue energy tinkore controls machinery with its mind able to build or repair complex devices in seconds.",
+      "image": "https://cdn.evomon.club/creatures/tinkore.jpg",
+      "how_to_get": [
+        "Found in Silent Sands."
+      ],
+      "evolutions": [
+        {
+          "from": "Tinkog",
+          "to": "Tinkore",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "twirlby",
@@ -1221,64 +2278,143 @@
       "slug": "twirlby",
       "rarity": "Common",
       "type": "Bug",
-      "base_stats": {},
-      "locations": [],
-      "description": "No detailed stats available for Twirlby yet. We're working to verify its base stats and locations.",
-      "image": "https://cdn.evomon.club/creatures/twirlby.png"
+      "base_stats": {
+        "hp": 82,
+        "attack": 97,
+        "defense": 92,
+        "sp_atk": 65,
+        "sp_def": 73,
+        "speed": 100,
+        "bst": 509
+      },
+      "locations": [
+        "Raven Ridge"
+      ],
+      "description": "It's petal winds are razor sharp and it's hollow proboscis can drain en entire flower in seconds. Twirlby is a feared aerial hunter moving silently through the forest canopy",
+      "image": "https://cdn.evomon.club/creatures/twirlby.png",
+      "how_to_get": [
+        "Found in Raven Ridge."
+      ],
+      "evolutions": [
+        {
+          "from": "Humding",
+          "to": "Flutterby",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Flutterby",
+          "to": "Twirlby",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "viparch",
       "name": "Viparch",
       "slug": "viparch",
       "rarity": "Legendary",
-      "type": "Dark",
+      "type": "Poison",
       "base_stats": {
         "hp": 75,
+        "attack": 114,
+        "defense": 65,
         "sp_atk": 77,
         "sp_def": 65,
         "speed": 106,
-        "defense": 65,
-        "attack": 114
+        "bst": 502
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/viparch.png"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "A legendary serpent king, its scales shimmer like royal purple silk. it controls toxic energy with a flick of its tail and its gaze can freeze foes in place. Viparch is the undisputed ruler of the wilds.",
+      "image": "https://cdn.evomon.club/creatures/viparch.png",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Vipip",
+          "to": "Vipour",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Vipour",
+          "to": "Viparch",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "vipip",
       "name": "Vipip",
       "slug": "vipip",
       "rarity": "Common",
-      "type": "Dark",
+      "type": "Poison",
       "base_stats": {
         "hp": 39,
+        "attack": 59,
+        "defense": 33,
         "sp_atk": 40,
         "sp_def": 33,
         "speed": 54,
-        "defense": 33,
-        "attack": 59
+        "bst": 258
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/vipip.png"
+      "locations": [
+        "Murkwood"
+      ],
+      "description": "A small, curious snake with a sharp gaze. it slithers through tall grass, using its rattle tail to warn others of its presence. Vipip is quiet but alert, always watching for threats in the shadows.",
+      "image": "https://cdn.evomon.club/creatures/vipip.png",
+      "how_to_get": [
+        "Found in Murkwood."
+      ],
+      "evolutions": [
+        {
+          "from": "Vipip",
+          "to": "Vipour",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Vipour",
+          "to": "Viparch",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "vipour",
       "name": "Vipour",
       "slug": "vipour",
       "rarity": "Common",
-      "type": "Dark",
+      "type": "Poison",
       "base_stats": {
         "hp": 54,
+        "attack": 82,
+        "defense": 46,
         "sp_atk": 55,
         "sp_def": 46,
         "speed": 76,
-        "defense": 46,
-        "attack": 82
+        "bst": 359
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/vipour.png"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "Vipip's evolved form, now a graceful and regal serpent. its hood unfurls like a royal cape, and the gem on its forehead glows with hidden power. Viour moves with quiet authority, respected by all who see it.",
+      "image": "https://cdn.evomon.club/creatures/vipour.png",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Vipip",
+          "to": "Vipour",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Vipour",
+          "to": "Viparch",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "volcrest",
@@ -1288,69 +2424,136 @@
       "type": "Flying",
       "base_stats": {
         "hp": 74,
+        "attack": 90,
+        "defense": 66,
         "sp_atk": 95,
         "sp_def": 70,
         "speed": 120,
-        "defense": 66,
-        "attack": 90
+        "bst": 515
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/volcrest.png"
+      "locations": [
+        "Raven Ridge"
+      ],
+      "description": "Bluebird's evolved form a fierce lightning predator. its wings are sharp as blades, and it can summon lighting bolts with a single flap. Volcrest storm clouds striking foes with blinding speed.",
+      "image": "https://cdn.evomon.club/creatures/volcrest.png",
+      "how_to_get": [
+        "Found in Raven Ridge."
+      ],
+      "evolutions": [
+        {
+          "from": "Bluebird",
+          "to": "Volcrest",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "wisphex",
       "name": "Wisphex",
       "slug": "wisphex",
       "rarity": "Common",
-      "type": "Dark",
+      "type": "Poison",
       "base_stats": {
         "hp": 74,
+        "attack": 86,
+        "defense": 78,
         "sp_atk": 95,
         "sp_def": 68,
         "speed": 109,
-        "defense": 78,
-        "attack": 86
+        "bst": 510
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/wisphex.jpg"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "The final form of the Wispuff line, a horned mystic wrapped in ribbons of living shadow. Wisphex lays slow, patient hexes — by the time you notice the curse, it has already drifted on.",
+      "image": "https://cdn.evomon.club/creatures/wisphex.jpg",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Wispuff",
+          "to": "Wispshade",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Wispshade",
+          "to": "Wisphex",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "wispshade",
       "name": "Wispshade",
       "slug": "wispshade",
       "rarity": "Common",
-      "type": "Dark",
+      "type": "Poison",
       "base_stats": {
         "hp": 52,
+        "attack": 62,
+        "defense": 56,
         "sp_atk": 67,
         "sp_def": 48,
         "speed": 78,
-        "defense": 56,
-        "attack": 62
+        "bst": 363
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/wispshade.jpg"
+      "locations": [
+        "Via Evo"
+      ],
+      "description": "Wispuff's evolved form, sleek and sudden where it used to be soft. Wisphade flickers between shadows mid-leap, leaving a trail of toxic shimmer for anyone reckless enough to give chase.",
+      "image": "https://cdn.evomon.club/creatures/wispshade.jpg",
+      "how_to_get": [
+        "Found in Via Evo."
+      ],
+      "evolutions": [
+        {
+          "from": "Wispuff",
+          "to": "Wispshade",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Wispshade",
+          "to": "Wisphex",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     },
     {
       "id": "wispuff",
       "name": "Wispuff",
       "slug": "wispuff",
       "rarity": "Common",
-      "type": "Dark",
+      "type": "Poison",
       "base_stats": {
         "hp": 37,
+        "attack": 44,
+        "defense": 40,
         "sp_atk": 48,
         "sp_def": 34,
         "speed": 56,
-        "defense": 40,
-        "attack": 44
+        "bst": 259
       },
-      "locations": [],
-      "description": "",
-      "image": "https://cdn.evomon.club/creatures/wispuff.jpg"
+      "locations": [
+        "Nether Land"
+      ],
+      "description": "A hovering puff of white fleece and violet horns, drifting through Nether Land like a lost cloud. Wispuff looks perfectly huggable — the faint sweet haze around it is exactly why you should resist.",
+      "image": "https://cdn.evomon.club/creatures/wispuff.jpg",
+      "how_to_get": [
+        "Found in Nether Land."
+      ],
+      "evolutions": [
+        {
+          "from": "Wispuff",
+          "to": "Wispshade",
+          "condition": "Not specified in public sources yet."
+        },
+        {
+          "from": "Wispshade",
+          "to": "Wisphex",
+          "condition": "Not specified in public sources yet."
+        }
+      ]
     }
   ]
 }
