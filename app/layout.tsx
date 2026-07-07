@@ -3,6 +3,7 @@ import { Sora, Manrope } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { GoogleAnalytics } from "@/components/google-analytics";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -51,6 +52,7 @@ export default function RootLayout({
         <link rel="icon" type="image/svg+xml" href="/icon.svg" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="64x64 32x32 16x16" />
         <link rel="shortcut icon" href="/favicon.ico" />
+        <GoogleAnalytics />
       </head>
       <body className="min-h-screen flex flex-col font-body bg-background text-foreground">
         <Navbar />
