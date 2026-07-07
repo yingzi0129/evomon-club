@@ -24,6 +24,12 @@ export const metadata: Metadata = {
     "Get active Evomon codes today, check the latest tier list, and browse all creatures. Fast, mobile-friendly fan-made guide for Roblox players.",
   keywords: ["evomon", "evomon codes", "evomon tier list", "evomon guide", "evomon creatures"],
   metadataBase: new URL("https://evomon.club"),
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "64x64 32x32 16x16", type: "image/x-icon" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+  },
   openGraph: {
     title: "Evomon Guide & Codes | Active Today - Evomon.club",
     description:
