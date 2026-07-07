@@ -5,6 +5,9 @@ import { ArrowLeft } from "lucide-react";
 export const metadata: Metadata = {
   title: "Terms of Use - Evomon.club",
   description: "Terms of Use for Evomon.club, an independent fan-made guide for Evomon on Roblox.",
+  alternates: {
+    canonical: "https://evomon.club/terms",
+  },
   robots: {
     index: false,
     follow: true,

@@ -5,6 +5,9 @@ import { ArrowLeft } from "lucide-react";
 export const metadata: Metadata = {
   title: "Cookie Policy - Evomon.club",
   description: "Cookie Policy for Evomon.club, an independent fan-made guide for Evomon on Roblox.",
+  alternates: {
+    canonical: "https://evomon.club/cookie-policy",
+  },
   robots: {
     index: false,
     follow: true,

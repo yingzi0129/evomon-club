@@ -5,6 +5,9 @@ import { ArrowLeft } from "lucide-react";
 export const metadata: Metadata = {
   title: "Privacy Policy - Evomon.club",
   description: "Privacy Policy for Evomon.club, an independent fan-made guide for Evomon on Roblox.",
+  alternates: {
+    canonical: "https://evomon.club/privacy",
+  },
   robots: {
     index: false,
     follow: true,

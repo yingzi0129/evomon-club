@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "About Evomon.club",
   description:
     "Evomon.club is an independent, fan-made guide for Evomon on Roblox. We share active codes, tier lists, and creature stats.",
+  alternates: {
+    canonical: "https://evomon.club/about",
+  },
   robots: {
     index: true,
     follow: true,

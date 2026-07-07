@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Evomon Guide & Codes | Active Today - Evomon.club",
   description:
     "Get active Evomon codes today, check the latest tier list, and browse all creatures. Fast, mobile-friendly fan-made guide for Roblox players.",
+  alternates: {
+    canonical: "https://evomon.club",
+  },
 };
 
 export default function HomePage() {

@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/privacy", "/terms", "/cookie-policy", "/about"],
+      disallow: ["/privacy", "/terms", "/cookie-policy"],
     },
     sitemap: "https://evomon.club/sitemap.xml",
   };

@@ -38,9 +38,6 @@ export const metadata: Metadata = {
     description:
       "Get active Evomon codes today, check the latest tier list, and browse all creatures. Fast, mobile-friendly fan-made guide for Roblox players.",
   },
-  alternates: {
-    canonical: "https://evomon.club",
-  },
 };
 
 export default function RootLayout({
