@@ -45,7 +45,7 @@ export function Navbar() {
             Get Latest Codes
           </Link>
           <a
-            href="https://www.roblox.com/games/134381727982611/Evomon"
+            href="/play"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-cta font-headline font-bold text-sm px-5 py-2.5 rounded-full transition-colors border-2 border-cta"
@@ -85,7 +85,7 @@ export function Navbar() {
               Get Latest Codes
             </Link>
             <a
-              href="https://www.roblox.com/games/134381727982611/Evomon"
+              href="/play"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-cta font-headline font-bold px-5 py-3 rounded-full transition-colors border-2 border-cta"

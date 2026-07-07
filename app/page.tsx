@@ -64,7 +64,7 @@ export default function HomePage() {
                 Get Latest Codes
               </Link>
               <a
-                href="https://www.roblox.com/games/134381727982611/Evomon"
+                href="/play"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-cta text-base font-bold py-3.5 px-8 rounded-full transition-all border-2 border-cta hover:-translate-y-0.5"
