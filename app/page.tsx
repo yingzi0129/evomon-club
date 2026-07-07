@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
-import { Gift, TrendingUp, Search, Smartphone, CheckCircle } from "lucide-react";
+import { Gift, ExternalLink, TrendingUp, Search, Smartphone, CheckCircle } from "lucide-react";
 import codesData from "@/data/codes.json";
 
 export const metadata: Metadata = {
@@ -63,13 +63,15 @@ export default function HomePage() {
                 <Gift className="w-5 h-5" />
                 Get Latest Codes
               </Link>
-              <Link
-                href="/tier-list"
-                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-700 text-base font-bold py-3.5 px-8 rounded-full transition-all border-2 border-slate-200 hover:border-slate-300"
+              <a
+                href="https://www.roblox.com/games/134381727982611/Evomon"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-cta text-base font-bold py-3.5 px-8 rounded-full transition-all border-2 border-cta hover:-translate-y-0.5"
               >
-                <TrendingUp className="w-5 h-5" />
-                View Tier List
-              </Link>
+                <ExternalLink className="w-5 h-5" />
+                Play Evomon
+              </a>
             </div>
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2 text-sm text-slate-500 font-medium">
               <div className="flex items-center gap-1.5">
