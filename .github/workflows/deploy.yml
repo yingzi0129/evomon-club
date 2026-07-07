@@ -24,10 +24,10 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile --registry https://registry.npmjs.org
+        run: npm ci --registry https://registry.npmjs.org
 
       - name: Build
-        run: yarn build
+        run: npm run build
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
