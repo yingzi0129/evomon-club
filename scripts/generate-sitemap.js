@@ -15,6 +15,14 @@ const pages = [
   // Policy pages are not submitted because they use robots noindex
 ];
 
+const escapeXml = (str) =>
+  String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+
 creatures.creatures.forEach((c) => {
   pages.push({
     loc: `${base}/creatures/${c.slug}/`,

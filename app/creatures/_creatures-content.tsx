@@ -1,10 +1,11 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
-import { ArrowLeft, Search, TrendingUp } from "lucide-react";
+import { Search, TrendingUp } from "lucide-react";
 import creaturesData from "@/data/creatures.json";
 import { CreatureCard } from "@/components/creature-card";
+import { Breadcrumb } from "@/components/breadcrumb";
 
 export default function CreaturesContent() {
   const [search, setSearch] = useState("");
@@ -32,17 +33,23 @@ export default function CreaturesContent() {
     });
   }, [search, typeFilter, rarityFilter]);
 
+  // Sync URL query params with filters on mount
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const type = params.get("type");
+    const rarity = params.get("rarity");
+    if (type && types.includes(type)) setTypeFilter(type);
+    if (rarity && rarities.includes(rarity)) setRarityFilter(rarity);
+  }, [types, rarities]);
+
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-8 py-8 pb-24 md:pb-12">
-      <div className="mb-6">
-        <Link
-          href="/"
-          className="inline-flex items-center text-sm font-medium text-slate-500 hover:text-primary transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4 mr-1" />
-          Back to Home
-        </Link>
-      </div>
+      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Creatures" },
+        ]}
+      />
 
       <header className="mb-10 text-center md:text-left">
         <h1 className="font-headline font-extrabold text-3xl md:text-4xl text-slate-900 mb-4">
@@ -70,7 +77,7 @@ export default function CreaturesContent() {
             onChange={(e) => setTypeFilter(e.target.value)}
             className="flex-1 md:w-40 rounded-lg border border-slate-200 bg-slate-50 focus:ring-2 focus:ring-primary focus:border-primary font-body text-sm py-2.5 px-3"
           >
-            {types.map((t) => (
+            {types.map((t: string) => (
               <option key={t} value={t}>
                 {t === "All" ? "All Types" : t}
               </option>
@@ -81,7 +88,7 @@ export default function CreaturesContent() {
             onChange={(e) => setRarityFilter(e.target.value)}
             className="flex-1 md:w-40 rounded-lg border border-slate-200 bg-slate-50 focus:ring-2 focus:ring-primary focus:border-primary font-body text-sm py-2.5 px-3"
           >
-            {rarities.map((r) => (
+            {rarities.map((r: string) => (
               <option key={r} value={r}>
                 {r === "All" ? "All Rarities" : r}
               </option>

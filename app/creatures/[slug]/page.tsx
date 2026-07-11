@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, MapPin, Sword, Shield, Zap, Heart, Sparkles, Snowflake } from "lucide-react";
+import { MapPin, Sword, Shield, Zap, Heart, Sparkles, Snowflake, ChevronLeft, ChevronRight } from "lucide-react";
 import creaturesData from "@/data/creatures.json";
 import tierListData from "@/data/tier-list.json";
 import { Creature } from "@/types";
 import { CreatureCard } from "@/components/creature-card";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { Metadata } from "next";
 
 interface PageProps {
@@ -52,6 +53,42 @@ export default function CreatureDetailPage({ params }: PageProps) {
     )
     .slice(0, 4);
 
+  const relatedByRarity = creaturesData.creatures
+    .filter((c) => c.rarity === creature.rarity && c.slug !== creature.slug)
+    .slice(0, 4);
+
+  const relatedByLocation = creature.locations.length > 0
+    ? creaturesData.creatures
+        .filter(
+          (c) =>
+            c.slug !== creature.slug &&
+            c.locations.some((loc) => creature.locations.includes(loc))
+        )
+        .slice(0, 4)
+    : [];
+
+  const evolutionSlugs = new Set<string>();
+  if (creature.evolutions) {
+    creature.evolutions.forEach((evo) => {
+      const fromSlug = creaturesData.creatures.find((c) => c.name === evo.from)?.slug;
+      const toSlug = creaturesData.creatures.find((c) => c.name === evo.to)?.slug;
+      if (fromSlug && fromSlug !== creature.slug) evolutionSlugs.add(fromSlug);
+      if (toSlug && toSlug !== creature.slug) evolutionSlugs.add(toSlug);
+    });
+  }
+  const evolutionRelated = creaturesData.creatures.filter((c) =>
+    evolutionSlugs.has(c.slug)
+  );
+
+  const currentIndex = creaturesData.creatures.findIndex(
+    (c) => c.slug === creature.slug
+  );
+  const prevCreature = currentIndex > 0 ? creaturesData.creatures[currentIndex - 1] : null;
+  const nextCreature =
+    currentIndex < creaturesData.creatures.length - 1
+      ? creaturesData.creatures[currentIndex + 1]
+      : null;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -67,15 +104,13 @@ export default function CreatureDetailPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-8 pb-24 md:pb-12">
-        <div className="mb-6">
-          <Link
-            href="/creatures"
-            className="inline-flex items-center text-sm font-medium text-slate-500 hover:text-primary transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4 mr-1" />
-            Back to Creatures
-          </Link>
-        </div>
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Creatures", href: "/creatures" },
+            { label: creature.name },
+          ]}
+        />
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left: Image Card */}
@@ -239,7 +274,7 @@ export default function CreatureDetailPage({ params }: PageProps) {
             </div>
 
             {related.length > 0 && (
-              <div>
+              <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
                 <h2 className="font-headline text-2xl font-bold text-slate-900 mb-6">
                   More {creature.type} Creatures
                 </h2>
@@ -250,6 +285,70 @@ export default function CreatureDetailPage({ params }: PageProps) {
                 </div>
               </div>
             )}
+
+            {relatedByRarity.length > 0 && (
+              <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
+                <h2 className="font-headline text-2xl font-bold text-slate-900 mb-6">
+                  More {creature.rarity} Evomon
+                </h2>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {relatedByRarity.map((c) => (
+                    <CreatureCard key={c.slug} creature={c} />
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {relatedByLocation.length > 0 && (
+              <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
+                <h2 className="font-headline text-2xl font-bold text-slate-900 mb-6">
+                  Found in the Same Location
+                </h2>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {relatedByLocation.map((c) => (
+                    <CreatureCard key={c.slug} creature={c} />
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {evolutionRelated.length > 0 && (
+              <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
+                <h2 className="font-headline text-2xl font-bold text-slate-900 mb-6">
+                  Evolution Line
+                </h2>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {evolutionRelated.map((c) => (
+                    <CreatureCard key={c.slug} creature={c} />
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-white rounded-2xl shadow-card border border-slate-100 p-6">
+              {prevCreature ? (
+                <Link
+                  href={`/creatures/${prevCreature.slug}`}
+                  className="flex items-center gap-2 text-slate-600 hover:text-primary transition-colors w-full sm:w-auto"
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                  <span>Previous: {prevCreature.name}</span>
+                </Link>
+              ) : (
+                <span className="invisible w-full sm:w-auto">Previous</span>
+              )}
+              {nextCreature ? (
+                <Link
+                  href={`/creatures/${nextCreature.slug}`}
+                  className="flex items-center gap-2 text-slate-600 hover:text-primary transition-colors w-full sm:w-auto sm:ml-auto"
+                >
+                  <span>Next: {nextCreature.name}</span>
+                  <ChevronRight className="w-5 h-5" />
+                </Link>
+              ) : (
+                <span className="invisible w-full sm:w-auto">Next</span>
+              )}
+            </div>
           </div>
         </div>
       </div>

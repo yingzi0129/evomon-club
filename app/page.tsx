@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { Gift, ExternalLink, TrendingUp, Search, Smartphone, CheckCircle } from "lucide-react";
 import codesData from "@/data/codes.json";
+import creaturesData from "@/data/creatures.json";
+import { CreatureCard } from "@/components/creature-card";
 
 export const metadata: Metadata = {
   title: "Evomon Guide & Codes | Active Today - Evomon.club",
@@ -14,6 +16,14 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   const activeCodes = codesData.codes.filter((c) => c.status === "active").slice(0, 3);
+
+  const starterCreatures = creaturesData.creatures
+    .filter((c) => c.rarity === "Starter")
+    .slice(0, 4);
+
+  const legendaryCreatures = creaturesData.creatures
+    .filter((c) => c.rarity === "Legendary")
+    .slice(0, 4);
 
   const features = [
     {
@@ -29,13 +39,6 @@ export default function HomePage() {
       desc: "Search by name, type, or rarity. Stats, locations, and how to get each creature — one page per creature.",
       href: "/creatures",
       color: "bg-teal-100 text-teal-600",
-    },
-    {
-      icon: Smartphone,
-      title: "Mobile-First",
-      desc: "Clean layout, fast load, no heavy ads blocking the content. Built for playing on the side.",
-      href: "#",
-      color: "bg-emerald-100 text-emerald-600",
     },
   ];
 
@@ -197,8 +200,63 @@ export default function HomePage() {
               <p className="text-slate-600 text-sm leading-relaxed">{feature.desc}</p>
             </Link>
           ))}
-        </div>
-      </section>
+
+          {/* Featured Creatures */}
+          {legendaryCreatures.length > 0 && (
+            <div className="lg:col-span-2 bg-white rounded-3xl p-8 shadow-card border border-slate-100">
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600">
+                    <Smartphone className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-slate-900 font-headline">Legendary Evomon</h3>
+                    <p className="text-sm text-slate-500">Top-tier creatures to chase</p>
+                  </div>
+                </div>
+                <Link
+                  href="/creatures?rarity=Legendary"
+                  className="text-sm font-bold text-primary hover:text-primary-dark"
+                >
+                  View all →
+                </Link>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {legendaryCreatures.map((c) => (
+                  <CreatureCard key={c.slug} creature={c} />
+                ))}
+              </div>
+            </div>
+          )}
+
+          {starterCreatures.length > 0 && (
+            <div className="lg:col-span-2 bg-white rounded-3xl p-8 shadow-card border border-slate-100">
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600">
+                    <CheckCircle className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-slate-900 font-headline">Starter Evomon</h3>
+                    <p className="text-sm text-slate-500">Where every journey begins</p>
+                  </div>
+                </div>
+                <Link
+                  href="/creatures?rarity=Starter"
+                  className="text-sm font-bold text-primary hover:text-primary-dark"
+                >
+                  View all →
+                </Link>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {starterCreatures.map((c) => (
+                  <CreatureCard key={c.slug} creature={c} />
+                ))}
+              </div>
+            </div>
+          )}
+          </div>
+          </section>
 
       {/* Trust Banner */}
       <section className="bg-slate-900 py-16 text-center px-4">

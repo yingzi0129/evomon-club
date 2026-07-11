@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, AlertTriangle } from "lucide-react";
+import { AlertTriangle } from "lucide-react";
 import tierListData from "@/data/tier-list.json";
 import creaturesData from "@/data/creatures.json";
 import { formatDate } from "@/lib/utils";
 import { CreatureCard } from "@/components/creature-card";
+import { Breadcrumb } from "@/components/breadcrumb";
 
 export const metadata: Metadata = {
   title: "Evomon Tier List (Updated Weekly) - Evomon.club",
@@ -71,15 +72,12 @@ export default function TierListPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-8 pb-24 md:pb-12">
-        <div className="mb-6">
-          <Link
-            href="/"
-            className="inline-flex items-center text-sm font-medium text-slate-500 hover:text-primary transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4 mr-1" />
-            Back to Home
-          </Link>
-        </div>
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Tier List" },
+          ]}
+        />
 
         <div className="mb-10 max-w-3xl">
           <h1 className="font-headline text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">

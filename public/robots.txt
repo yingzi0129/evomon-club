@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /privacy
+Disallow: /terms
+Disallow: /cookie-policy
+
+Sitemap: https://evomon.club/sitemap.xml

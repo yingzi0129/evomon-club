@@ -1,26 +1,28 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, Info, AlertTriangle } from "lucide-react";
+import { Info, AlertTriangle } from "lucide-react";
 import codesData from "@/data/codes.json";
+import creaturesData from "@/data/creatures.json";
 import { timeAgo } from "@/lib/utils";
 import { CopyCodeButton } from "@/components/copy-code-button";
+import { Breadcrumb } from "@/components/breadcrumb";
+import { CreatureCard } from "@/components/creature-card";
 
 export function CodesPageClient({ activeCodes }: { activeCodes: typeof codesData.codes }) {
+  const featuredCreatures = creaturesData.creatures
+    .filter((c) => c.rarity === "Legendary" || c.rarity === "Epic")
+    .slice(0, 4);
+
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-8 py-8 pb-24 md:pb-12">
-      {/* Breadcrumb */}
-      <div className="mb-6">
-        <Link
-          href="/"
-          className="inline-flex items-center text-sm font-medium text-slate-500 hover:text-primary transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4 mr-1" />
-          Back to Home
-        </Link>
-      </div>
+      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Codes" },
+        ]}
+      />
 
-      {/* Header */}
       <div className="mb-10 max-w-3xl">
         <h1 className="font-headline text-3xl md:text-5xl font-extrabold text-indigo-900 mb-4 tracking-tight">
           Evomon Codes (Active Today)
@@ -129,7 +131,34 @@ export function CodesPageClient({ activeCodes }: { activeCodes: typeof codesData
               </p>
             </div>
           </div>
+
+          {/* Featured Creatures */}
+          <div className="bg-white rounded-2xl p-6 shadow-card border border-slate-100">
+            <h3 className="font-headline font-bold text-indigo-900 text-lg mb-4">
+              Top Creatures to Use Codes On
+            </h3>
+            <div className="grid grid-cols-2 gap-3">
+              {featuredCreatures.map((c) => (
+                <CreatureCard key={c.slug} creature={c} />
+              ))}
+            </div>
+            <Link
+              href="/creatures"
+              className="block mt-4 text-center text-sm font-bold text-primary hover:text-primary-dark"
+            >
+              View all creatures →
+            </Link>
+          </div>
         </div>
+      </div>
+
+      <div className="mt-12 text-center">
+        <Link
+          href="/creatures"
+          className="inline-flex items-center gap-2 bg-cta hover:bg-cta-hover text-white font-bold px-8 py-3 rounded-full transition-colors shadow-md"
+        >
+          Browse All Creatures
+        </Link>
       </div>
     </div>
   );
