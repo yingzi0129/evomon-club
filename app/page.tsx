@@ -140,11 +140,11 @@ export default function HomePage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Active Codes Card - large left card spanning 2 rows */}
           <Link
             href="/codes"
-            className="group bg-white rounded-3xl p-8 shadow-card border border-slate-100 hover:shadow-card-hover transition-shadow relative overflow-hidden lg:col-span-2 lg:row-span-2 flex flex-col justify-between"
+            className="group bg-white rounded-3xl p-8 shadow-card border border-slate-100 hover:shadow-card-hover transition-shadow relative overflow-hidden flex flex-col justify-between"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-50 rounded-bl-full -z-0 group-hover:scale-110 transition-transform"></div>
             <div className="relative z-10">
@@ -176,7 +176,7 @@ export default function HomePage() {
           {/* Tier List Card - spans 2 cols on desktop */}
           <Link
             href="/tier-list"
-            className="group bg-white rounded-3xl p-8 shadow-card border border-slate-100 hover:shadow-card-hover transition-shadow lg:col-span-2"
+            className="group bg-white rounded-3xl p-8 shadow-card border border-slate-100 hover:shadow-card-hover transition-shadow flex flex-col"
           >
             <div className="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 mb-4">
               <TrendingUp className="w-5 h-5" />
@@ -197,37 +197,9 @@ export default function HomePage() {
             </div>
           </Link>
 
-          {features.slice(1).map((feature) => (
-            <Link
-              key={feature.title}
-              href={feature.href}
-              className="group bg-white rounded-3xl p-8 shadow-card border border-slate-100 hover:shadow-card-hover transition-shadow flex flex-col lg:col-span-2"
-            >
-              <div className="flex items-start gap-4">
-                <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 ${feature.color}`}>
-                  <feature.icon className="w-5 h-5" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold text-slate-900 mb-2 font-headline">{feature.title}</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">{feature.desc}</p>
-                </div>
-              </div>
-              <div className="mt-auto pt-6 grid grid-cols-3 gap-2">
-                {["Type", "Rarity", "Stats"].map((label) => (
-                  <div
-                    key={label}
-                    className="bg-slate-50 rounded-lg py-2 text-center border border-slate-100 text-xs font-bold text-slate-600"
-                  >
-                    {label}
-                  </div>
-                ))}
-              </div>
-            </Link>
-          ))}
-
           {/* Featured Creatures */}
           {strongestCreatures.length > 0 && (
-            <div className="lg:col-span-2 bg-white rounded-3xl p-8 shadow-card border border-slate-100">
+            <div className="bg-white rounded-3xl p-8 shadow-card border border-slate-100">
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600">
@@ -253,8 +225,36 @@ export default function HomePage() {
             </div>
           )}
 
+          {features.slice(1).map((feature) => (
+            <Link
+              key={feature.title}
+              href={feature.href}
+              className="group bg-white rounded-3xl p-8 shadow-card border border-slate-100 hover:shadow-card-hover transition-shadow flex flex-col"
+            >
+              <div className="flex items-start gap-4">
+                <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 ${feature.color}`}>
+                  <feature.icon className="w-5 h-5" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-slate-900 mb-2 font-headline">{feature.title}</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">{feature.desc}</p>
+                </div>
+              </div>
+              <div className="mt-auto pt-6 grid grid-cols-2 gap-3">
+                {["Search by name", "Filter by type", "Filter by rarity", "View stats"].map((label) => (
+                  <div
+                    key={label}
+                    className="bg-slate-50 rounded-lg py-2 px-3 text-center border border-slate-100 text-xs font-bold text-slate-600"
+                  >
+                    {label}
+                  </div>
+                ))}
+              </div>
+            </Link>
+          ))}
+
           {starterCreatures.length > 0 && (
-            <div className="lg:col-span-4 bg-white rounded-3xl p-8 shadow-card border border-slate-100">
+            <div className="md:col-span-2 bg-white rounded-3xl p-8 shadow-card border border-slate-100">
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600">
