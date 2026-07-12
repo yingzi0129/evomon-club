@@ -182,22 +182,46 @@ export default function HomePage() {
               <TrendingUp className="w-5 h-5" />
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-2 font-headline">Evomon Tier List</h3>
-            <p className="text-slate-600 text-sm leading-relaxed">
+            <p className="text-slate-600 text-sm leading-relaxed mb-6">
               Sorted by PvE viability, base stats, rarity, and community feedback. Updated weekly or after balance patches.
             </p>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              {["S", "A", "B", "C"].map((tier) => (
+                <div
+                  key={tier}
+                  className="bg-slate-50 rounded-lg py-2 px-3 text-center border border-slate-100"
+                >
+                  <span className="text-sm font-bold text-slate-700">Tier {tier}</span>
+                </div>
+              ))}
+            </div>
           </Link>
 
           {features.slice(1).map((feature) => (
             <Link
               key={feature.title}
               href={feature.href}
-              className="group bg-white rounded-3xl p-8 shadow-card border border-slate-100 hover:shadow-card-hover transition-shadow"
+              className="group bg-white rounded-3xl p-8 shadow-card border border-slate-100 hover:shadow-card-hover transition-shadow flex flex-col lg:col-span-2"
             >
-              <div className={`w-10 h-10 rounded-xl flex items-center justify-center mb-4 ${feature.color}`}>
-                <feature.icon className="w-5 h-5" />
+              <div className="flex items-start gap-4">
+                <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 ${feature.color}`}>
+                  <feature.icon className="w-5 h-5" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-slate-900 mb-2 font-headline">{feature.title}</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">{feature.desc}</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2 font-headline">{feature.title}</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">{feature.desc}</p>
+              <div className="mt-auto pt-6 grid grid-cols-3 gap-2">
+                {["Type", "Rarity", "Stats"].map((label) => (
+                  <div
+                    key={label}
+                    className="bg-slate-50 rounded-lg py-2 text-center border border-slate-100 text-xs font-bold text-slate-600"
+                  >
+                    {label}
+                  </div>
+                ))}
+              </div>
             </Link>
           ))}
 
@@ -230,7 +254,7 @@ export default function HomePage() {
           )}
 
           {starterCreatures.length > 0 && (
-            <div className="lg:col-span-2 bg-white rounded-3xl p-8 shadow-card border border-slate-100">
+            <div className="lg:col-span-4 bg-white rounded-3xl p-8 shadow-card border border-slate-100">
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600">
