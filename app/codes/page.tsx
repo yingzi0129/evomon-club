@@ -3,7 +3,7 @@ import codesData from "@/data/codes.json";
 import { CodesPageClient } from "@/components/codes-page-client";
 
 export const metadata: Metadata = {
-  title: "Evomon Codes (Active Today) - Evomon.club",
+  title: "Active Evomon Codes Today (July 2026) - Evomon.club",
   description:
     "See all active Evomon codes for free gems, rewards, and boosts. Updated regularly with last verified time. Redeem through official Roblox channels.",
   alternates: {

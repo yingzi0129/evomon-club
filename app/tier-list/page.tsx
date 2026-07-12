@@ -8,7 +8,7 @@ import { CreatureCard } from "@/components/creature-card";
 import { Breadcrumb } from "@/components/breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Evomon Tier List (Updated Weekly) - Evomon.club",
+  title: "Evomon Tier List: Best PvE Creatures Ranked - Evomon.club",
   description:
     "Check the latest Evomon tier list based on PvE viability, stats, rarity, and community feedback. Updated weekly or after game patches.",
   alternates: {

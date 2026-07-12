@@ -6,9 +6,9 @@ import creaturesData from "@/data/creatures.json";
 import { CreatureCard } from "@/components/creature-card";
 
 export const metadata: Metadata = {
-  title: "Evomon Guide & Codes | Active Today - Evomon.club",
+  title: "Evomon Codes, Tier List & Creature Guide | Active Today - Evomon.club",
   description:
-    "Get active Evomon codes today, check the latest tier list, and browse all creatures. Fast, mobile-friendly fan-made guide for Roblox players.",
+    "Get active Evomon codes, check the latest tier list, and browse all creature stats. Fast, mobile-friendly fan-made guide for Roblox players.",
   alternates: {
     canonical: "https://evomon.club",
   },
@@ -254,7 +254,7 @@ export default function HomePage() {
                   View tier list →
                 </Link>
               </div>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {strongestCreatures.map((c) => (
                   <CreatureCard key={c.slug} creature={c} />
                 ))}
@@ -281,7 +281,7 @@ export default function HomePage() {
                   View all →
                 </Link>
               </div>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {starterCreatures.map((c) => (
                   <CreatureCard key={c.slug} creature={c} />
                 ))}
