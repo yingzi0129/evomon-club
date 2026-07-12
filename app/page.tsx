@@ -136,7 +136,7 @@ export default function HomePage() {
             One clean hub for codes, tiers, and creatures
           </h2>
           <p className="text-lg text-slate-600">
-            We monitor official channels and trusted sources, then turn the latest info into a fast, structured guide you can actually use on mobile.
+            We monitor official channels and trusted sources, then turn the latest info into a fast, structured Evomon guide with active codes, tier list rankings, and creature stats.
           </p>
         </div>
 
@@ -153,7 +153,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-3 font-headline">Active Codes Today</h3>
               <p className="text-slate-600 leading-relaxed mb-6">
-                Regular checks on official Discord, Twitter/X, and Pro Game Guides. Each code shows reward, status, and last verified time.
+                Regular checks on official Discord, Twitter/X, and Pro Game Guides. Each active Evomon code shows reward, status, and last verified time.
               </p>
             </div>
             <div className="bg-slate-50 rounded-xl p-4 border border-slate-100 relative z-10">
@@ -181,7 +181,7 @@ export default function HomePage() {
             <div className="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 mb-4">
               <TrendingUp className="w-5 h-5" />
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2 font-headline">Tier List</h3>
+            <h3 className="text-xl font-bold text-slate-900 mb-2 font-headline">Evomon Tier List</h3>
             <p className="text-slate-600 text-sm leading-relaxed">
               Sorted by PvE viability, base stats, rarity, and community feedback. Updated weekly or after balance patches.
             </p>

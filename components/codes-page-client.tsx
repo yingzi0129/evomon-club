@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Info, AlertTriangle } from "lucide-react";
+import { Info, AlertTriangle, TrendingUp } from "lucide-react";
 import codesData from "@/data/codes.json";
 import creaturesData from "@/data/creatures.json";
 import { timeAgo } from "@/lib/utils";
@@ -148,6 +148,29 @@ export function CodesPageClient({ activeCodes }: { activeCodes: typeof codesData
             >
               View all creatures →
             </Link>
+          </div>
+
+          {/* P1 内链：Codes → Tier List */}
+          <div className="bg-amber-50 rounded-2xl p-5 border border-amber-100">
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-amber-600 shadow-sm">
+                <TrendingUp className="w-5 h-5" />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-headline font-bold text-slate-900 mb-1">
+                  Check the Evomon Tier List
+                </h3>
+                <p className="text-sm text-slate-600 mb-3">
+                  Not sure which creature to spend your rewards on? See which ones rank highest in our Evomon tier list and ranking guide.
+                </p>
+                <Link
+                  href="/tier-list"
+                  className="inline-flex items-center text-sm font-bold text-amber-700 hover:text-amber-800"
+                >
+                  View Evomon Tier List →
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

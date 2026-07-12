@@ -84,9 +84,10 @@ export default function TierListPage() {
             Evomon Tier List
           </h1>
           <p className="text-lg text-slate-600 leading-relaxed">
-            This tier list ranks creatures by PvE viability, base stats, rarity,
-            and community feedback. Rankings change when the game is balanced —
-            check the update date below.
+            This Evomon tier list ranks the strongest creatures by PvE viability,
+            base stats, rarity, and community feedback. Use it as a living ranking
+            guide to find the best Evomon for your team — rankings change when the
+            game is balanced, so check the update date below.
           </p>
         </div>
 
@@ -127,7 +128,7 @@ export default function TierListPage() {
         {/* Methodology */}
         <section className="mt-12 bg-indigo-50/50 rounded-2xl p-6 md:p-8 border border-indigo-100">
           <h2 className="font-headline text-2xl font-bold text-indigo-900 mb-3">
-            How the tier list is ranked
+            How the Evomon ranking is built
           </h2>
           <p className="text-slate-700 mb-4">
             Methodology: {tierListData.methodology} Last updated:{" "}
@@ -136,8 +137,9 @@ export default function TierListPage() {
           <div className="bg-white rounded-xl p-4 border border-indigo-100 flex items-start gap-3">
             <AlertTriangle className="w-5 h-5 text-indigo-500 mt-0.5 flex-shrink-0" />
             <p className="text-sm text-slate-600">
-              Tier lists are community interpretations, not official rankings.
-              Use them as a starting point, not a guarantee.
+              Tier lists are community interpretations of the strongest Evomon,
+              not official rankings. Use them as a starting point, not a
+              guarantee.
             </p>
           </div>
         </section>
@@ -148,6 +150,15 @@ export default function TierListPage() {
             className="inline-flex items-center gap-2 bg-cta hover:bg-cta-hover text-white font-bold px-8 py-3 rounded-full transition-colors shadow-md"
           >
             View All Creatures
+          </Link>
+        </div>
+
+        <div className="mt-8 text-center">
+          <Link
+            href="/codes"
+            className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors"
+          >
+            Redeem active Evomon codes →
           </Link>
         </div>
       </div>

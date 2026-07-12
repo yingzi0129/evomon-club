@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { MapPin, Sword, Shield, Zap, Heart, Sparkles, Snowflake, ChevronLeft, ChevronRight } from "lucide-react";
+import { MapPin, Sword, Shield, Zap, Heart, Sparkles, Snowflake, ChevronLeft, ChevronRight, TrendingUp, Gift } from "lucide-react";
 import creaturesData from "@/data/creatures.json";
 import tierListData from "@/data/tier-list.json";
 import { Creature } from "@/types";
@@ -324,6 +324,50 @@ export default function CreatureDetailPage({ params }: PageProps) {
                 </div>
               </div>
             )}
+
+            {/* P0 内链模块：Tier List + Codes */}
+            <div className="bg-gradient-to-br from-indigo-50 to-amber-50 rounded-2xl shadow-card border border-indigo-100 p-6">
+              <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4">
+                Keep Exploring
+              </h2>
+              <p className="text-slate-600 mb-6">
+                See how {creature.name} compares to the rest of the roster, or redeem active codes to power it up.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <Link
+                  href="/tier-list"
+                  className="flex items-center gap-4 bg-white rounded-xl p-4 border border-slate-200 hover:border-indigo-300 hover:shadow-sm transition-all group"
+                >
+                  <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 group-hover:scale-105 transition-transform">
+                    <TrendingUp className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <div className="font-headline font-bold text-slate-900 group-hover:text-indigo-700 transition-colors">
+                      Evomon Tier List
+                    </div>
+                    <div className="text-sm text-slate-500">
+                      {tier ? `Ranked Tier ${tier.tier}` : "Check the ranking"}
+                    </div>
+                  </div>
+                </Link>
+                <Link
+                  href="/codes"
+                  className="flex items-center gap-4 bg-white rounded-xl p-4 border border-slate-200 hover:border-indigo-300 hover:shadow-sm transition-all group"
+                >
+                  <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 group-hover:scale-105 transition-transform">
+                    <Gift className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <div className="font-headline font-bold text-slate-900 group-hover:text-indigo-700 transition-colors">
+                      Evomon Codes
+                    </div>
+                    <div className="text-sm text-slate-500">
+                      Active rewards today
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-white rounded-2xl shadow-card border border-slate-100 p-6">
               {prevCreature ? (
