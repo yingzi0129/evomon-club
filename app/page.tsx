@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
-import { Gift, ExternalLink, TrendingUp, Search, Smartphone, CheckCircle } from "lucide-react";
+import { Gift, ExternalLink, TrendingUp, Search, CheckCircle, Zap } from "lucide-react";
 import codesData from "@/data/codes.json";
 import creaturesData from "@/data/creatures.json";
 import { CreatureCard } from "@/components/creature-card";
@@ -19,11 +19,11 @@ export default function HomePage() {
 
   const starterCreatures = creaturesData.creatures
     .filter((c) => c.rarity === "Starter")
-    .slice(0, 4);
+    .slice(0, 3);
 
-  const legendaryCreatures = creaturesData.creatures
-    .filter((c) => c.rarity === "Legendary")
-    .slice(0, 4);
+  const strongestCreatures = [...creaturesData.creatures]
+    .sort((a, b) => (b.base_stats.bst ?? 0) - (a.base_stats.bst ?? 0))
+    .slice(0, 3);
 
   const features = [
     {
@@ -202,27 +202,27 @@ export default function HomePage() {
           ))}
 
           {/* Featured Creatures */}
-          {legendaryCreatures.length > 0 && (
+          {strongestCreatures.length > 0 && (
             <div className="lg:col-span-2 bg-white rounded-3xl p-8 shadow-card border border-slate-100">
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600">
-                    <Smartphone className="w-5 h-5" />
+                    <Zap className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900 font-headline">Legendary Evomon</h3>
-                    <p className="text-sm text-slate-500">Top-tier creatures to chase</p>
+                    <h3 className="text-xl font-bold text-slate-900 font-headline">Strongest Evomon</h3>
+                    <p className="text-sm text-slate-500">Top 3 by base stat total (BST)</p>
                   </div>
                 </div>
                 <Link
-                  href="/creatures?rarity=Legendary"
+                  href="/tier-list"
                   className="text-sm font-bold text-primary hover:text-primary-dark"
                 >
-                  View all →
+                  View tier list →
                 </Link>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {legendaryCreatures.map((c) => (
+              <div className="grid grid-cols-3 gap-4">
+                {strongestCreatures.map((c) => (
                   <CreatureCard key={c.slug} creature={c} />
                 ))}
               </div>
@@ -248,7 +248,7 @@ export default function HomePage() {
                   View all →
                 </Link>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-3 gap-4">
                 {starterCreatures.map((c) => (
                   <CreatureCard key={c.slug} creature={c} />
                 ))}
