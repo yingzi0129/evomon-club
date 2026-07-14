@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import { Gift, ExternalLink, TrendingUp, Search, CheckCircle, Zap } from "lucide-react";
 import codesData from "@/data/codes.json";
 import creaturesData from "@/data/creatures.json";
+import { Creature } from "@/types";
 import { CreatureCard } from "@/components/creature-card";
 
 export const metadata: Metadata = {
@@ -24,6 +25,16 @@ export default function HomePage() {
   const strongestCreatures = [...creaturesData.creatures]
     .sort((a, b) => (b.base_stats.bst ?? 0) - (a.base_stats.bst ?? 0))
     .slice(0, 3);
+
+  const topByType: Record<string, Creature & { base_stats: { bst: number } }> = {};
+  for (const c of creaturesData.creatures as (Creature & { base_stats: { bst?: number } })[]) {
+    const currentBst = c.base_stats.bst ?? 0;
+    const bestBst = topByType[c.type]?.base_stats.bst ?? 0;
+    if (currentBst > bestBst) {
+      topByType[c.type] = c as Creature & { base_stats: { bst: number } };
+    }
+  }
+  const typeHighlights = Object.values(topByType).slice(0, 6);
 
   const features = [
     {
@@ -288,8 +299,74 @@ export default function HomePage() {
               </div>
             </div>
           )}
+
+          {/* Browse by Type */}
+          {typeHighlights.length > 0 && (
+            <div className="md:col-span-2 bg-white rounded-3xl p-8 shadow-card border border-slate-100">
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600">
+                    <Search className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-slate-900 font-headline">Browse by Type</h3>
+                    <p className="text-sm text-slate-500">Explore creatures by element and find your next team member</p>
+                  </div>
+                </div>
+                <Link
+                  href="/creatures"
+                  className="text-sm font-bold text-primary hover:text-primary-dark"
+                >
+                  View all →
+                </Link>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+                {typeHighlights.map((c) => (
+                  <Link
+                    key={c.type}
+                    href={`/creatures?type=${encodeURIComponent(c.type)}`}
+                    className="group bg-slate-50 rounded-2xl border border-slate-100 p-4 hover:border-indigo-200 hover:shadow-sm transition-all text-center"
+                  >
+                    <div className="relative w-16 h-16 mx-auto mb-3 rounded-full overflow-hidden bg-white border border-slate-100">
+                      <img
+                        src={c.image && !c.image.startsWith("/images/") ? c.image : "/placeholder-creature.png"}
+                        alt={`${c.name} ${c.type} Evomon`}
+                        className="w-full h-full object-contain p-1 group-hover:scale-105 transition-transform"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="font-bold text-slate-900 font-headline group-hover:text-primary transition-colors">
+                      {c.type}
+                    </div>
+                    <div className="text-xs text-slate-500 mt-1">
+                      Top: {c.name}
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
           </div>
           </section>
+
+      {/* Explore CTA */}
+      <section className="max-w-7xl mx-auto px-4 md:px-8 pb-16 md:pb-24">
+        <div className="bg-gradient-to-br from-indigo-600 to-violet-600 rounded-3xl p-8 md:p-12 text-center shadow-xl">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-4 font-headline">
+            Looking for a specific creature?
+          </h2>
+          <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
+            Browse all 76 Evomon, filter by type or rarity, and compare base stats to build your best team.
+          </p>
+          <Link
+            href="/creatures"
+            className="inline-flex items-center justify-center gap-2 bg-white text-indigo-700 hover:bg-indigo-50 font-bold text-lg px-8 py-4 rounded-xl transition-colors shadow-sm"
+          >
+            <Search className="w-5 h-5" />
+            Browse All Creatures
+          </Link>
+        </div>
+      </section>
 
       {/* Trust Banner */}
       <section className="bg-slate-900 py-16 text-center px-4">

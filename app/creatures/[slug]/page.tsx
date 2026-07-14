@@ -24,8 +24,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!creature) return { title: "Not Found" };
   const rarity = creature.rarity && creature.rarity !== "Common" ? `${creature.rarity} ` : "";
   const typeText = creature.type ? `${creature.type} ` : "";
-  const title = `${creature.name} - ${rarity}${typeText}Evomon | Stats, Location & Evolution`;
-  const description = `${creature.name} is a ${rarity}${typeText}Evomon with base stats, catch locations, evolution line, and how to get it. ${creature.description || ""}`;
+  const locationText = creature.locations && creature.locations.length > 0
+    ? `Found in ${creature.locations.slice(0, 2).join(", ")}. `
+    : "";
+  const title = `${creature.name} - ${rarity}${typeText}Evomon | How to Get, Stats & Location`;
+  const description = `${locationText}Learn how to get ${creature.name}, its base stats, moves, evolution line, and catch locations. ${creature.description || ""}`.trim();
   return {
     title,
     description: description.slice(0, 160),
@@ -36,8 +39,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default function CreatureDetailPage({ params }: PageProps) {
-  const creature = creaturesData.creatures.find((c) => c.slug === params.slug) as Creature | undefined;
-  if (!creature) notFound();
+  const found = creaturesData.creatures.find((c) => c.slug === params.slug);
+  if (!found) notFound();
+  const creature = found as Creature;
 
   const stats = creature.base_stats;
   const imageUrl = creature.image && !creature.image.startsWith("/images/")
@@ -80,6 +84,19 @@ export default function CreatureDetailPage({ params }: PageProps) {
     evolutionSlugs.has(c.slug)
   );
 
+  // Build a unified suggested-creatures list (max 4) prioritizing: evolution, same type, same location, same rarity
+  const suggestedSet = new Set<string>();
+  const addToSuggested = (slug: string) => {
+    if (slug !== creature.slug && !suggestedSet.has(slug)) suggestedSet.add(slug);
+  };
+  evolutionRelated.forEach((c) => addToSuggested(c.slug));
+  related.forEach((c) => addToSuggested(c.slug));
+  relatedByLocation.forEach((c) => addToSuggested(c.slug));
+  relatedByRarity.forEach((c) => addToSuggested(c.slug));
+  const suggestedCreatures = creaturesData.creatures
+    .filter((c) => suggestedSet.has(c.slug))
+    .slice(0, 4);
+
   const currentIndex = creaturesData.creatures.findIndex(
     (c) => c.slug === creature.slug
   );
@@ -89,12 +106,64 @@ export default function CreatureDetailPage({ params }: PageProps) {
       ? creaturesData.creatures[currentIndex + 1]
       : null;
 
+  const typeLabel = creature.type ? `${creature.type}-type` : "";
+  const rarityLabel = creature.rarity && creature.rarity !== "Common" ? `${creature.rarity} ` : "";
+  const locationText = creature.locations && creature.locations.length > 0
+    ? `Found in ${creature.locations.slice(0, 2).join(", ")}. `
+    : "";
+
+  const faqItems = [
+    {
+      question: `How to get ${creature.name} in Evomon?`,
+      answer: creature.how_to_get && creature.how_to_get.length > 0
+        ? `${creature.name} can be obtained by: ${creature.how_to_get.join("; ")}.`
+        : `The exact method to obtain ${creature.name} in Evomon is not confirmed in public sources yet.`,
+    },
+    {
+      question: `Where to find ${creature.name} in Evomon?`,
+      answer: creature.locations && creature.locations.length > 0
+        ? `${creature.name} can be found in ${creature.locations.join(", ")}.`
+        : `The confirmed locations for ${creature.name} are not documented in public sources yet.`,
+    },
+    {
+      question: `What type is ${creature.name}?`,
+      answer: creature.type
+        ? `${creature.name} is a ${typeLabel} Evomon.`
+        : `The type of ${creature.name} is not confirmed in public sources yet.`,
+    },
+    {
+      question: `Does ${creature.name} evolve?`,
+      answer: creature.evolutions && creature.evolutions.length > 0
+        ? `${creature.name} has an evolution line. ${creature.evolutions.map((e) => `${e.from ? `${e.from} → ` : ""}${e.to}`).join("; ")}. The exact evolution conditions are not confirmed in public sources yet.`
+        : `Evolution details for ${creature.name} are not confirmed in public sources yet.`,
+    },
+    {
+      question: `What is ${creature.name} weak against?`,
+      answer: creature.type
+        ? `As a ${typeLabel} Evomon, ${creature.name}'s weaknesses depend on the Evomon type chart. Check our type chart guide for exact matchups.`
+        : `Weakness information for ${creature.name} is not available yet.`,
+    },
+  ];
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: `${creature.name} Stats & Rarity`,
-    description: creature.description,
+    headline: `${creature.name} - ${rarityLabel}${typeLabel} Evomon | How to Get, Stats & Location`,
+    description: `${locationText}Learn how to get ${creature.name}, its base stats, moves, evolution line, and catch locations in Evomon.`,
     image: imageUrl,
+  };
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
   };
 
   return (
@@ -166,21 +235,27 @@ export default function CreatureDetailPage({ params }: PageProps) {
               <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
                 <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
                   <MapPin className="w-5 h-5 text-indigo-500" />
-                  Locations
+                  Where to Find {creature.name}
                 </h2>
+                <p className="text-slate-600 leading-relaxed mb-3">
+                  {creature.name} can be found in the following locations in Evomon:
+                </p>
                 <ul className="list-disc list-inside text-slate-600 space-y-1">
                   {creature.locations.map((loc) => (
                     <li key={loc}>{loc}</li>
                   ))}
                 </ul>
+                <p className="text-sm text-slate-500 mt-3">
+                  Travel to these areas and look for {creature.name} in the wild to add it to your collection.
+                </p>
               </div>
             ) : (
               <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
                 <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
                   <MapPin className="w-5 h-5 text-indigo-500" />
-                  Locations
+                  Where to Find {creature.name}
                 </h2>
-                <p className="text-slate-500">Location data for {creature.name} is not confirmed in public sources yet.</p>
+                <p className="text-slate-500">The confirmed locations for {creature.name} are not documented in public sources yet.</p>
               </div>
             )}
 
@@ -189,6 +264,9 @@ export default function CreatureDetailPage({ params }: PageProps) {
                 <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4">
                   How to Get {creature.name}
                 </h2>
+                <p className="text-slate-600 leading-relaxed mb-3">
+                  Here is how to obtain {creature.name} in Evomon:
+                </p>
                 <ul className="list-disc list-inside text-slate-600 space-y-1">
                   {creature.how_to_get.map((method) => (
                     <li key={method}>{method}</li>
@@ -200,14 +278,14 @@ export default function CreatureDetailPage({ params }: PageProps) {
                 <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4">
                   How to Get {creature.name}
                 </h2>
-                <p className="text-slate-500">How to obtain {creature.name} is not confirmed in public sources yet.</p>
+                <p className="text-slate-500">The exact method to obtain {creature.name} in Evomon is not confirmed in public sources yet.</p>
               </div>
             )}
 
             {(creature.moves && creature.moves.length > 0) ? (
               <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
                 <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4">
-                  Moves
+                  {creature.name} Moves
                 </h2>
                 <div className="grid gap-3">
                   {creature.moves.map((move) => (
@@ -229,17 +307,25 @@ export default function CreatureDetailPage({ params }: PageProps) {
             ) : (
               <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
                 <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4">
-                  Moves
+                  {creature.name} Moves
                 </h2>
-                <p className="text-slate-500">Moves for {creature.name} are not fully documented in public sources yet.</p>
+                <p className="text-slate-600 leading-relaxed">
+                  The full move list for {creature.name} is not yet documented in public sources. Once confirmed, this section will list its basic attacks, level-up moves, and any charge skills.
+                </p>
+                <p className="text-slate-500 mt-3">
+                  Known facts: {creature.name} is a {typeLabel || "Evomon"} with a base stat total of {Object.values(stats).filter((v): v is number => typeof v === "number").reduce((a, b) => a + b, 0)}.
+                </p>
               </div>
             )}
 
             {(creature.evolutions && creature.evolutions.length > 0) ? (
               <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
                 <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4">
-                  Evolution
+                  Does {creature.name} Evolve?
                 </h2>
+                <p className="text-slate-600 leading-relaxed mb-4">
+                  Yes, {creature.name} is part of an evolution line in Evomon. The exact evolution condition (level, stone, or item) is not confirmed in public sources yet.
+                </p>
                 <div className="flex flex-wrap items-center gap-3">
                   {creature.evolutions.map((evo, idx) => (
                     <div key={idx} className="flex items-center gap-3">
@@ -253,7 +339,7 @@ export default function CreatureDetailPage({ params }: PageProps) {
             ) : (
               <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
                 <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4">
-                  Evolution
+                  Does {creature.name} Evolve?
                 </h2>
                 <p className="text-slate-500">Evolution details for {creature.name} are not confirmed in public sources yet.</p>
               </div>
@@ -261,7 +347,7 @@ export default function CreatureDetailPage({ params }: PageProps) {
 
             <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
               <h2 className="font-headline text-2xl font-bold text-slate-900 mb-6">
-                Base Stats
+                {creature.name} Base Stats
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <StatBox icon={Heart} label="HP" value={stats.hp ?? null} />
@@ -272,6 +358,25 @@ export default function CreatureDetailPage({ params }: PageProps) {
                 <StatBox icon={Zap} label="Speed" value={stats.speed ?? null} />
               </div>
             </div>
+
+            <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
+              <h2 className="font-headline text-2xl font-bold text-slate-900 mb-4">
+                Frequently Asked Questions About {creature.name}
+              </h2>
+              <dl className="space-y-4">
+                {faqItems.map((item, idx) => (
+                  <div key={idx} className="border-b border-slate-100 last:border-0 pb-4 last:pb-0">
+                    <dt className="font-semibold text-slate-900 mb-1">{item.question}</dt>
+                    <dd className="text-slate-600 leading-relaxed">{item.answer}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+            />
 
             {related.length > 0 && (
               <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-6">
@@ -319,6 +424,23 @@ export default function CreatureDetailPage({ params }: PageProps) {
                 </h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {evolutionRelated.map((c) => (
+                    <CreatureCard key={c.slug} creature={c} />
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Fixed Related Creatures module at the bottom */}
+            {suggestedCreatures.length > 0 && (
+              <div className="bg-gradient-to-br from-slate-50 to-indigo-50 rounded-2xl shadow-card border border-indigo-100 p-6">
+                <h2 className="font-headline text-2xl font-bold text-slate-900 mb-2">
+                  Related Creatures to Explore
+                </h2>
+                <p className="text-slate-600 mb-6">
+                  Players looking at {creature.name} also check these creatures.
+                </p>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {suggestedCreatures.map((c) => (
                     <CreatureCard key={c.slug} creature={c} />
                   ))}
                 </div>
