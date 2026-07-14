@@ -11,6 +11,7 @@ export interface Creature {
     sp_atk?: number;
     sp_def?: number;
     speed?: number;
+    bst?: number;
   };
   locations: string[];
   description: string;

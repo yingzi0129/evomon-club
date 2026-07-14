@@ -8,6 +8,7 @@ const navLinks = [
   { href: "/codes", label: "Codes" },
   { href: "/tier-list", label: "Tier List" },
   { href: "/creatures", label: "Creatures" },
+  { href: "/starters", label: "Starters" },
   { href: "/faq", label: "FAQ" },
   { href: "/about", label: "About" },
 ];
