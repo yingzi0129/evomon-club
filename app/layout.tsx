@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { GoogleAnalytics } from "@/components/google-analytics";
+import { PlausibleAnalytics } from "@/components/plausible-analytics";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -54,6 +55,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="google-site-verification" content="ndrn2OwVG13y1DeCKXxAMvJAIpUSxAIdkC1kq2qDiTo" />
         <GoogleAnalytics />
+        <PlausibleAnalytics />
       </head>
       <body className="min-h-screen flex flex-col font-body bg-background text-foreground">
         <Navbar />
