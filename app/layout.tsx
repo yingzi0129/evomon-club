@@ -3,8 +3,6 @@ import { Sora, Manrope } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { GoogleAnalytics } from "@/components/google-analytics";
-import { PlausibleAnalytics } from "@/components/plausible-analytics";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -54,8 +52,28 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="64x64 32x32 16x16" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="google-site-verification" content="ndrn2OwVG13y1DeCKXxAMvJAIpUSxAIdkC1kq2qDiTo" />
-        <GoogleAnalytics />
-        <PlausibleAnalytics />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-WC5V9J4YJH"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-WC5V9J4YJH', {
+                page_title: document.title,
+                page_location: window.location.href,
+              });
+            `,
+          }}
+        />
+        <script
+          defer
+          data-domain="evomon.club"
+          src="https://plausible.shipsolo.io/js/pa-SgjtMbxWoTmy89WDo0w24.js"
+        ></script>
       </head>
       <body className="min-h-screen flex flex-col font-body bg-background text-foreground">
         <Navbar />
