@@ -70,10 +70,22 @@ export default function RootLayout({
           }}
         />
         <script
-          defer
-          data-domain="evomon.club"
+          async
           src="https://plausible.shipsolo.io/js/pa-SgjtMbxWoTmy89WDo0w24.js"
         ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.plausible = window.plausible || function() {
+                (plausible.q = plausible.q || []).push(arguments);
+              };
+              plausible.init = plausible.init || function(i) {
+                plausible.o = i || {};
+              };
+              plausible.init();
+            `,
+          }}
+        />
       </head>
       <body className="min-h-screen flex flex-col font-body bg-background text-foreground">
         <Navbar />
