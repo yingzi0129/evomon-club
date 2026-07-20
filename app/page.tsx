@@ -5,6 +5,7 @@ import codesData from "@/data/codes.json";
 import creaturesData from "@/data/creatures.json";
 import { Creature } from "@/types";
 import { CreatureCard } from "@/components/creature-card";
+import { AdsterraNativeBannerIframe } from "@/components/adsterra-native-banner-iframe";
 
 export const metadata: Metadata = {
   title: "Evomon Codes, Tier List & Creature Guide | Active Today - Evomon.club",
@@ -299,6 +300,8 @@ export default function HomePage() {
               </div>
             </div>
           )}
+
+          <AdsterraNativeBannerIframe />
 
           {/* Browse by Type */}
           {typeHighlights.length > 0 && (

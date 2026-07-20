@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ad</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background: transparent; }
+  </style>
+</head>
+<body>
+  <div id="container-3598632d0fe0a970c08a37bf64d558f8"></div>
+  <script data-cfasync="false" async src="https://pl30451626.effectivecpmnetwork.com/3598632d0fe0a970c08a37bf64d558f8/invoke.js"></script>
+  <script>
+    // Tell parent iframe height after ad renders (best-effort)
+    function notifyHeight() {
+      try {
+        var height = document.documentElement.scrollHeight || document.body.scrollHeight || 250;
+        parent.postMessage({ type: 'adsterra-native-ad-resize', height: height }, '*');
+      } catch (e) {}
+    }
+    window.addEventListener('load', notifyHeight);
+    setTimeout(notifyHeight, 500);
+    setTimeout(notifyHeight, 1500);
+  </script>
+</body>
+</html>
