@@ -7,6 +7,7 @@ import tierListData from "@/data/tier-list.json";
 import { Creature } from "@/types";
 import { CreatureCard } from "@/components/creature-card";
 import { Breadcrumb } from "@/components/breadcrumb";
+import { AdsterraNativeBanner } from "@/components/adsterra-native-banner";
 import { Metadata } from "next";
 
 interface PageProps {
@@ -491,28 +492,31 @@ export default function CreatureDetailPage({ params }: PageProps) {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-white rounded-2xl shadow-card border border-slate-100 p-6">
+            <AdsterraNativeBanner />
+
+            {/* Next / Prev navigation */}
+            <div className="flex items-center justify-between gap-4">
               {prevCreature ? (
                 <Link
-                  href={`/creatures/${prevCreature.slug}`}
-                  className="flex items-center gap-2 text-slate-600 hover:text-primary transition-colors w-full sm:w-auto"
+                  href={`/creatures/${prevCreature.slug}/`}
+                  className="flex items-center gap-2 text-sm font-bold text-slate-600 hover:text-primary transition-colors"
                 >
-                  <ChevronLeft className="w-5 h-5" />
-                  <span>Previous: {prevCreature.name}</span>
+                  <ChevronLeft className="w-4 h-4" />
+                  {prevCreature.name}
                 </Link>
               ) : (
-                <span className="invisible w-full sm:w-auto">Previous</span>
+                <span />
               )}
               {nextCreature ? (
                 <Link
-                  href={`/creatures/${nextCreature.slug}`}
-                  className="flex items-center gap-2 text-slate-600 hover:text-primary transition-colors w-full sm:w-auto sm:ml-auto"
+                  href={`/creatures/${nextCreature.slug}/`}
+                  className="flex items-center gap-2 text-sm font-bold text-slate-600 hover:text-primary transition-colors"
                 >
-                  <span>Next: {nextCreature.name}</span>
-                  <ChevronRight className="w-5 h-5" />
+                  {nextCreature.name}
+                  <ChevronRight className="w-4 h-4" />
                 </Link>
               ) : (
-                <span className="invisible w-full sm:w-auto">Next</span>
+                <span />
               )}
             </div>
           </div>
