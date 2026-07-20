@@ -25,9 +25,16 @@ export interface Code {
   code: string;
   reward: string;
   status: "active" | "expired";
+  added_at: string;
   expires_at: string | null;
   verified_at: string;
   sources: string[];
+}
+
+export interface CodesData {
+  updated_at: string;
+  source: string[];
+  codes: Code[];
 }
 
 export interface Tier {

@@ -11,6 +11,11 @@ const pages = [
   { loc: `${base}/codes/`, priority: 0.9, changefreq: "weekly" },
   { loc: `${base}/tier-list/`, priority: 0.8, changefreq: "weekly" },
   { loc: `${base}/creatures/`, priority: 0.8, changefreq: "weekly" },
+  { loc: `${base}/best-starter/`, priority: 0.8, changefreq: "weekly" },
+  { loc: `${base}/guides/`, priority: 0.7, changefreq: "weekly" },
+  { loc: `${base}/guides/type-chart/`, priority: 0.7, changefreq: "weekly" },
+  { loc: `${base}/guides/beginner-guide/`, priority: 0.7, changefreq: "weekly" },
+  { loc: `${base}/guides/farming-guide/`, priority: 0.7, changefreq: "weekly" },
   // About is intentionally excluded from sitemap per SEO policy
   // Policy pages are not submitted because they use robots noindex
 ];

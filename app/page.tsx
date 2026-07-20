@@ -286,10 +286,10 @@ export default function HomePage() {
                   </div>
                 </div>
                 <Link
-                  href="/creatures?rarity=Starter"
+                  href="/best-starter"
                   className="text-sm font-bold text-primary hover:text-primary-dark"
                 >
-                  View all →
+                  Best starter guide →
                 </Link>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
