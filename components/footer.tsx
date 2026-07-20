@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Mail } from "lucide-react";
 import { CookieBanner } from "./cookie-banner";
 
 export function Footer() {
@@ -24,7 +25,7 @@ export function Footer() {
           </Link>
         </div>
 
-        <div className="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex flex-wrap justify-center md:justify-start gap-6 text-sm">
             <Link href="/privacy" className="text-slate-500 hover:text-primary transition-colors">
               Privacy Policy
@@ -39,8 +40,21 @@ export function Footer() {
               About
             </Link>
           </div>
-          <p className="text-xs text-slate-400 text-center md:text-right max-w-md">
-            Evomon.club is an independent fan-made guide site and is not affiliated with, endorsed by, or sponsored by the Evomon developers or Roblox Corporation.
+          <a
+            href="mailto:support@evomon.club"
+            className="inline-flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-primary transition-colors"
+          >
+            <Mail className="w-4 h-4" />
+            support@evomon.club
+          </a>
+        </div>
+
+        <div className="border-t border-slate-100 mt-8 pt-6 text-center">
+          <p className="text-xs text-slate-400 max-w-2xl mx-auto">
+            Evomon.club is an independent fan-made guide site and is not affiliated with, endorsed by, or sponsored by the Evomon developers or Roblox Corporation. Questions? Contact us at{" "}
+            <a href="mailto:support@evomon.club" className="text-slate-500 hover:text-primary transition-colors">
+              support@evomon.club
+            </a>.
           </p>
         </div>
       </div>
