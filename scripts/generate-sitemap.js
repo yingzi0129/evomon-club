@@ -51,6 +51,11 @@ ${pages
 </urlset>
 `;
 
-const outPath = path.join(__dirname, "..", "public", "sitemap.xml");
+const outPath = path.join(__dirname, "..", "public", "sitemap-google.xml");
 fs.writeFileSync(outPath, xml, "utf8");
-console.log(`Generated sitemap.xml with ${pages.length} URLs`);
+
+// Also keep a standard /sitemap.xml copy for tools that expect the default path.
+const fallbackPath = path.join(__dirname, "..", "public", "sitemap.xml");
+fs.writeFileSync(fallbackPath, xml, "utf8");
+
+console.log(`Generated sitemap-google.xml with ${pages.length} URLs`);
