@@ -7,7 +7,6 @@ import tierListData from "@/data/tier-list.json";
 import { Creature } from "@/types";
 import { CreatureCard } from "@/components/creature-card";
 import { Breadcrumb } from "@/components/breadcrumb";
-import { AdsterraNativeBanner } from "@/components/adsterra-native-banner";
 import { Metadata } from "next";
 
 interface PageProps {
@@ -491,8 +490,6 @@ export default function CreatureDetailPage({ params }: PageProps) {
                 </Link>
               </div>
             </div>
-
-            <AdsterraNativeBanner />
 
             {/* Next / Prev navigation */}
             <div className="flex items-center justify-between gap-4">
